@@ -14,8 +14,8 @@ export default defineConfig({
         description: "Testing PWA with Vite 6",
         theme_color: "#317EFB",
         icons: [
-          { src: "pwa-192x192.png", sizes: "192x192", type: "image/png" },
-          { src: "pwa-512x512.png", sizes: "512x512", type: "image/png" },
+          { src: "icons/pwa-192x192.png", sizes: "192x192", type: "image/png" },
+          { src: "icons/pwa-512x512.png", sizes: "512x512", type: "image/png" },
           {
             src: "pwa-512x512-maskable.png",
             sizes: "512x512",
