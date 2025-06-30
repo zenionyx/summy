@@ -2,6 +2,9 @@ import useScreenSize from "../funcs/useScreenSize";
 import { Menu } from "lucide-react";
 import { useState, useCallback } from "react";
 import { Link } from "react-router-dom";
+import turnipImg from "../assets/imgs/Turnip.webp";
+import homeImg from "../assets/imgs/home.png";
+import BonitoImg from "../assets/imgs/Bonito.png";
 
 const SmallNav = () => {
   const [isShownSubMenu, setIsShownSubMenu] = useState(false);
@@ -22,18 +25,27 @@ const SmallNav = () => {
         <div className="relative ">
           <button
             onClick={showSubMenu}
-            className="w-14 h-14 bg-blue-200 rounded-full flex justify-center items-center"
+            className="w-16 h-16 bg-blue-200 rounded-full flex justify-center items-center"
           >
-            <Menu />
+            <Menu className="w-10 h-10 text-sm" />
           </button>
 
           {isShownSubMenu && (
             <div className=" absolute bottom-full right-0 mb-2 bg-white w-fit rounded z-10 flex flex-col-reverse gap-4">
               <Link to="/" className="FoMBtn1 flex items-center justify-center">
-                <img className="special" src="../src/assets/imgs/home.png" alt="" />
+                <img className="special" src={homeImg} alt="" />
               </Link>
-              <Link to="/crops" className="FoMBtn1 flex items-center justify-center">
-                <img src="../src/assets/imgs/Turnip.webp" alt="" />
+              <Link
+                to="/crops"
+                className="FoMBtn1 flex items-center justify-center"
+              >
+                <img src={turnipImg} alt="" />
+              </Link>
+              <Link
+                to="/crops"
+                className="FoMBtn1 flex items-center justify-center"
+              >
+                <img src={BonitoImg} alt="" />
               </Link>
             </div>
           )}
