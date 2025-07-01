@@ -2,7 +2,7 @@ import useScreenSize from "../funcs/useScreenSize";
 import { Carrot, Fish, ChefHat, House } from "lucide-react";
 import { Link, useLocation } from "react-router-dom";
 
-const SmallNav2 = () => {
+const SmallNav = () => {
   const { pathname } = useLocation();
   const navItems = [
     { to: "/", Icon: House, activeClass: "text-[#BA8456]" },
@@ -19,9 +19,7 @@ const SmallNav2 = () => {
         const isActive = pathname === to;
         return (
           <Link key={to} to={to}>
-            <Icon
-              className={isActive ? activeClass : inactiveClass}
-            />
+            <Icon className={isActive ? activeClass : inactiveClass} />
           </Link>
         );
       })}
@@ -29,25 +27,23 @@ const SmallNav2 = () => {
   );
 };
 
+const BigNav = () => {
+  return (
+    <nav className="w-full flex justify-evenly bg-blue-50 py-2">
+      <a>Logo</a>
+      <a>Crops</a>
+      <a>Fish</a>
+      <a>Recipies</a>
+      <a>Login</a>
+    </nav>
+  );
+};
+
 const Navbar = () => {
   const screen = useScreenSize();
   const isPhoneOrTablet = screen === "phone" || screen === "tablet";
 
-  return (
-    <>
-      {isPhoneOrTablet ? (
-        <SmallNav2 />
-      ) : (
-        <nav className="w-full flex justify-evenly bg-blue-50 py-2">
-          <a>Logo</a>
-          <a>Crops</a>
-          <a>Fish</a>
-          <a>Recipies</a>
-          <a>Login</a>
-        </nav>
-      )}
-    </>
-  );
+  return <>{isPhoneOrTablet ? <SmallNav /> : <BigNav />}</>;
 };
 
 export default Navbar;
