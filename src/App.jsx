@@ -2,6 +2,8 @@ import { Routes, Route, Navigate } from "react-router-dom";
 import Layout from "./comps/Layout";
 import Home from "./pages/Home";
 import Crops from "./pages/Crops";
+import Fish from "./pages/Fish";
+import Recipes from "./pages/Recipes";
 
 function App() {
   return (
@@ -10,6 +12,8 @@ function App() {
         <Route element={<Layout/>}>
         <Route path="/" element={<Home/>} />
         <Route path="/crops" element={<Crops/>} />
+        <Route path="/fish" element={<Fish/>} />
+        <Route path="/recipes" element={<Recipes/>} />
         </Route>
       </Routes>
     </>
