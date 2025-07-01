@@ -1,80 +1,31 @@
 import useScreenSize from "../funcs/useScreenSize";
-import { Menu, Carrot, Fish, ChefHat, House } from "lucide-react";
-import { useState, useCallback } from "react";
-import { Link } from "react-router-dom";
-
-import turnipImg from "../assets/imgs/Turnip.webp";
-import homeImg from "../assets/imgs/home.png";
-import BonitoImg from "../assets/imgs/Bonito.png";
-import cookingPot from "../assets/imgs/CookingPot.png";
-
-const SmallNav = () => {
-  const [isShownSubMenu, setIsShownSubMenu] = useState(false);
-  const toggleSubMenu = useCallback(() => {
-    setIsShownSubMenu((prev) => !prev);
-  }, []);
-
-  // Sub-menus
-  const items = [
-    { to: "/", img: homeImg, alt: "Home" },
-    { to: "/crops", img: turnipImg, alt: "Crops" },
-    { to: "/fish", img: BonitoImg, alt: "Fish" },
-    { to: "/recipes", img: cookingPot, alt: "Recipes" },
-  ];
-
-  // Shared classes
-  const btnBase = "fixed bottom-8 right-6 z-50";
-  const circleBtn =
-    "w-16 h-16 bg-blue-200 rounded-full flex items-center justify-center";
-  const submenu = `
-    absolute bottom-full right-0 mb-2
-    p-2 rounded z-50
-    flex flex-col-reverse gap-4
-  `;
-  const linkBtn = "FoMBtn1 flex items-center justify-center";
-
-  return (
-    <div className={btnBase}>
-      <div className="relative">
-        <button onClick={toggleSubMenu} className={circleBtn}>
-          <Menu className="w-10 h-10" />
-        </button>
-
-        {isShownSubMenu && (
-          <div className={submenu}>
-            {items.map(({ to, img, alt }) => (
-              <Link key={to} to={to} className={linkBtn}>
-                <img src={img} alt={alt} className="w-8 h-8 object-contain" />
-              </Link>
-            ))}
-          </div>
-        )}
-      </div>
-    </div>
-  );
-};
+import { Carrot, Fish, ChefHat, House } from "lucide-react";
+import { Link, useLocation } from "react-router-dom";
 
 const SmallNav2 = () => {
+  const { pathname } = useLocation();
+  const navItems = [
+    { to: "/", Icon: House, activeClass: "text-[#BA8456]" },
+    { to: "/crops", Icon: Carrot, activeClass: "text-[#FFA248]" },
+    { to: "/fish", Icon: Fish, activeClass: "text-[#52A6E4]" },
+    { to: "/recipes", Icon: ChefHat, activeClass: "text-[#F898B7]" },
+  ];
+
+  const inactiveClass = "text-gray-400";
+
   return (
-    <>
-      <div className="w-full flex justify-around bg-slate-200 h-14 items-center fixed bottom-0 rounded-t-xl">
-        <Link to="/">
-          <House />
-        </Link>
-        
-        <Link to="/crops">
-          <Carrot />
-        </Link>
-
-        <Link to="/fish">
-          <Fish />
-        </Link>
-
-        <Link to="/recipes">
-          <ChefHat />
-        </Link>
-      </div>
-    </>
+    <div className="fixed bottom-0 w-full flex justify-around bg-slate-100 h-16 items-center rounded-t-xl">
+      {navItems.map(({ to, Icon, activeClass }) => {
+        const isActive = pathname === to;
+        return (
+          <Link key={to} to={to}>
+            <Icon
+              className={isActive ? activeClass : inactiveClass}
+            />
+          </Link>
+        );
+      })}
+    </div>
   );
 };
 
