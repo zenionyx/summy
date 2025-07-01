@@ -5,10 +5,10 @@ import { Link, useLocation } from "react-router-dom";
 const SmallNav = () => {
   const { pathname } = useLocation();
   const navItems = [
-    { to: "/", Icon: House, activeClass: "text-[#BA8456]" },
-    { to: "/crops", Icon: Carrot, activeClass: "text-[#FFA248]" },
-    { to: "/fish", Icon: Fish, activeClass: "text-[#52A6E4]" },
-    { to: "/recipes", Icon: ChefHat, activeClass: "text-[#F898B7]" },
+    { to: "/", Icon: House, activeClass: "bg-[#cb9c73]" },
+    { to: "/crops", Icon: Carrot, activeClass: "bg-[#FFA248]" },
+    { to: "/fish", Icon: Fish, activeClass: "bg-[#52A6E4]" },
+    { to: "/recipes", Icon: ChefHat, activeClass: "bg-[#F898B7]" },
   ];
 
   const inactiveClass = "text-gray-400";
@@ -19,7 +19,11 @@ const SmallNav = () => {
         const isActive = pathname === to;
         return (
           <Link key={to} to={to}>
-            <Icon className={isActive ? activeClass : inactiveClass} />
+            <div
+              className={`w-11 h-11 rounded-full flex justify-center items-center ${isActive ? activeClass : "bg-slate-100"} `}
+            >
+              <Icon className={isActive ? "text-white" : "text-gray-400"} />
+            </div>
           </Link>
         );
       })}
