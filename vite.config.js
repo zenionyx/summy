@@ -7,18 +7,46 @@ export default defineConfig({
     react(),
     VitePWA({
       registerType: "autoUpdate",
-      includeAssets: ["favicon.svg", "robots.txt", "apple-touch-icon.png"],
+      includeAssets: [
+        "MistriaMart-favicon.svg",
+        "robots.txt",
+        "apple-touch-icon.png",
+      ],
       manifest: {
-        name: "My PWA App",
-        short_name: "MyPWA",
-        description: "Testing PWA with Vite 6",
-        theme_color: "#317EFB",
+        name: "MistriaMart",
+        short_name: "MistriaMart",
+        description:
+          "An installable, offline-ready Fields of Mistria companion—search and browse every crop, fish and recipe in a familiar “shopping cart” interface, save favorites and plan your next harvest on the go.",
+        theme_color: "#eff6ff",
         icons: [
-          { src: "icons/pwa-192x192.png", sizes: "192x192", type: "image/png" },
-          { src: "icons/pwa-512x512.png", sizes: "512x512", type: "image/png" },
+          // { src: "icons/pwa-192x192.png", sizes: "192x192", type: "image/png" },
           {
-            src: "pwa-512x512-maskable.png",
+            src: "icons/MistriaMartIcon-512.png",
             sizes: "512x512",
+            type: "image/png",
+          },
+          // maskable versions:
+          {
+            src: "icons/maskable_icon_x192.png",
+            sizes: "192x192",
+            type: "image/png",
+            purpose: "maskable",
+          },
+          {
+            src: "icons/maskable_icon_x384.png",
+            sizes: "384x384",
+            type: "image/png",
+            purpose: "maskable",
+          },
+          {
+            src: "icons/maskable_icon_x512.png",
+            sizes: "512x512",
+            type: "image/png",
+            purpose: "maskable",
+          },
+          {
+            src: "icons/maskable_icon_x930.png",
+            sizes: "930x930",
             type: "image/png",
             purpose: "maskable",
           },
