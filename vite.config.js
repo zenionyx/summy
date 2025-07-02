@@ -20,7 +20,11 @@ export default defineConfig({
         theme_color: "#eff6ff",
         background_color: "eff6ff",
         icons: [
-          // { src: "icons/pwa-192x192.png", sizes: "192x192", type: "image/png" },
+          {
+            src: "icons/mistriamart_x192.png",
+            sizes: "192x192",
+            type: "image/png",
+          },
           {
             src: "icons/mistriamart_x512.png",
             sizes: "512x512",

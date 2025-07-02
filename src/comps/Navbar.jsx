@@ -14,8 +14,8 @@ const navItems = [
 
 function NavDot({ to, Icon, color, isActive, screen }) {
   const isTablet = screen === "tablet";
-  const sizeClass = isTablet ? "w-14 h-14" : "w-11 h-11";
-  const iconSize = isTablet ? 30 : 24;
+  const sizeClass = isTablet ? "w-16 h-16" : "w-11 h-11";
+  const iconSize = isTablet ? 34 : 24;
 
   return (
     <Link to={to}>
@@ -49,7 +49,7 @@ export default function Navbar() {
     );
   }
 
-  const heightClass = screen === "tablet" ? "h-24" : "h-[80px]";
+  const heightClass = screen === "tablet" ? "h-28" : "h-[80px]";
 
   return (
     <div

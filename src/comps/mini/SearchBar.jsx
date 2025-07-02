@@ -1,7 +1,7 @@
 // components/SearchBar.jsx
 import { useState, useEffect } from "react";
 import { useNavigate, useLocation } from "react-router-dom";
-import { Search } from "lucide-react";
+import { Search, X } from "lucide-react";
 
 export default function SearchBar() {
   const navigate = useNavigate();
@@ -47,7 +47,7 @@ export default function SearchBar() {
           className="absolute right-4 top-1/2 -translate-y-1/2 text-gray-400"
           aria-label="Clear search"
         >
-          ✕
+          <X />
         </button>
       )}
     </div>
