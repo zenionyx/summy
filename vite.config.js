@@ -13,11 +13,12 @@ export default defineConfig({
         "apple-touch-icon.png",
       ],
       manifest: {
-        name: "MistriaMart",
-        short_name: "MistriaMart",
+        name: "Mistria Mart",
+        short_name: "Mistria Mart",
         description:
           "An installable, offline-ready Fields of Mistria companion—search and browse every crop, fish and recipe in a familiar “shopping cart” interface, save favorites and plan your next harvest on the go.",
         theme_color: "#eff6ff",
+        background_color: "eff6ff",
         icons: [
           // { src: "icons/pwa-192x192.png", sizes: "192x192", type: "image/png" },
           {
