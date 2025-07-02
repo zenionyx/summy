@@ -8,7 +8,7 @@ export default defineConfig({
     VitePWA({
       registerType: "autoUpdate",
       includeAssets: [
-        "MistriaMart-favicon.svg",
+        "mistriamart_favicon.svg",
         "robots.txt",
         "apple-touch-icon.png",
       ],
@@ -21,32 +21,32 @@ export default defineConfig({
         icons: [
           // { src: "icons/pwa-192x192.png", sizes: "192x192", type: "image/png" },
           {
-            src: "icons/MistriaMartIcon-512.png",
+            src: "icons/mistriamart_x512.png",
             sizes: "512x512",
             type: "image/png",
           },
           // maskable versions:
           {
-            src: "icons/maskable_icon_x192.png",
+            src: "icons/mistriamart_maskable_x192.png",
             sizes: "192x192",
             type: "image/png",
             purpose: "maskable",
           },
           {
-            src: "icons/maskable_icon_x384.png",
+            src: "icons/mistriamart_maskable_x384.png",
             sizes: "384x384",
             type: "image/png",
             purpose: "maskable",
           },
           {
-            src: "icons/maskable_icon_x512.png",
+            src: "icons/mistriamart_maskable_x512.png",
             sizes: "512x512",
             type: "image/png",
             purpose: "maskable",
           },
           {
-            src: "icons/maskable_icon_x930.png",
-            sizes: "930x930",
+            src: "icons/mistriamart_maskable_x1024.png",
+            sizes: "1024x1024",
             type: "image/png",
             purpose: "maskable",
           },

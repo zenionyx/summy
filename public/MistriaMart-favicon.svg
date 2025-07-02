@@ -1,9 +1,0 @@
-<svg version="1.2" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64" width="64" height="64">
-	<title>Decor_Basket</title>
-	<defs>
-		<image  width="64" height="60" id="img1" href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAEAAAAA8CAMAAADhV0xWAAAAAXNSR0IB2cksfwAAAGZQTFRFAAAAAAAAAAAB////AAIAoJ//L2WDXK7Yi9/yLWWDXK7Zi9/zomAv0IJHyO7s/f//id/yXK7aL2SDAQAAAAAC///9i9/ws/PM///+AgAAoJ3/XzUaL2eDL2WBop//it/yXa7Y9q1gP77DkAAAACJ0Uk5TAP///////////////////////////////////////////y79k78AAAHFSURBVHic3ZcNT8IwEIZvTHHRgQZRxMT//8sEEYRANoKBbl7v1q0rW/dBQswaGGuv79Pr9XaAA5XNUZ+RzVoDAPF1ATlDDwD9d4U2FJvzrK4wINeuAujRS1rYeOLhW4DfhgA3ov0nAE+cAeTlwYAEFR6obdgAA4BDCjiCv0sdi/hAGgC8wzGNYxbRhh6UADRxwMPYC+VAjJt17vfSIkiTA0hNaAXIaPkhW1oDaFOtAKN1CeD5pwjgc0CwP16rhXCaS9fhhobGACtegBPJ50CbgMkSRnLe21cKSJbPAJxIJQApMDwA8bI0AN7WCgCS4rn3GcbqbZohERnPAEOAmSsQ4AftAXU9eP0sAPAZ3uH7kXaLshsGoHqThMXbp0EtAjgxAoY7C4D6gp7LZh70FzlAiQdO9jByKTmRWC6PRzQC+Ab4mKu6UuRBrxqATl0GmC5tAIrBZMHbRMATR09Q9nJByTLVEsQEMJ1fCLjYAwMwWFcAZIEMoV5TBbhLAP1LRabOSrsHo6/u1YJdAbwDlyzHIgRDjFVD1sBOAEATQgKztZl2n/uF0gGAnkzmr9CifthBgEqmKqFsKom6BNAn1W3N/jP9a8Af7b5CbLxUJY4AAAAASUVORK5CYII="/>
-	</defs>
-	<style>
-	</style>
-	<use id="Layer 3" href="#img1" x="0" y="2"/>
-</svg>
