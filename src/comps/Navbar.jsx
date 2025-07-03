@@ -50,7 +50,7 @@ export default function Navbar() {
   }
 
   const heightClass =
-    screen === "tablet" ? "h-32 rounded-t-3xl" : "h-[80px] rounded-t-xl";
+    screen === "tablet" ? "h-32 rounded-t-3xl" : "h-[80px] rounded-t-2xl";
 
   return (
     <div
