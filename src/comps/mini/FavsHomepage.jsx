@@ -6,7 +6,7 @@ const FavsHomepage = () => {
   return (
     <>
       <div className="flex gap-1 items-center mb-4 hover:text-[#90dd6f] focus:text-[#90dd6f]">
-        <h2 className="text-2xl">Favoruites</h2>
+        <h2 className="text-2xl font-semibold">Favourites</h2>
         <ChevronRight size={22} className="mt-[5px]" />
       </div>
 
