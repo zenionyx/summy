@@ -1,12 +1,11 @@
-
-import SearchBar from "../comps/mini/SearchBar"
+import SearchBar from "../comps/mini/SearchBar";
 import HomeNav from "../comps/mini/HomeNav";
 
 const Home = () => {
   return (
     <div>
       {/* Top Section */}
-     <HomeNav/>
+      <HomeNav />
 
       {/* Search bar */}
       <SearchBar />

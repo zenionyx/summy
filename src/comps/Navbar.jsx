@@ -49,11 +49,12 @@ export default function Navbar() {
     );
   }
 
-  const heightClass = screen === "tablet" ? "h-28" : "h-[80px]";
+  const heightClass =
+    screen === "tablet" ? "h-32 rounded-t-3xl" : "h-[80px] rounded-t-xl";
 
   return (
     <div
-      className={`fixed bottom-0 w-full flex justify-around bg-slate-100 ${heightClass} items-center rounded-t-xl`}
+      className={`fixed bottom-0 w-full flex justify-around bg-slate-100 ${heightClass} items-center`}
     >
       {navItems.map((item) => (
         <NavDot
