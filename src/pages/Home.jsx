@@ -17,6 +17,7 @@ const Home = () => {
       {/* Favourites Section */}
       <section>
         <FavsHomepage/>
+        <FavsHomepage/>
       </section>
 
       {/* Seasonal Lists */}

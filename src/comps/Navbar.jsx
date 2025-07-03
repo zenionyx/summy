@@ -54,7 +54,7 @@ export default function Navbar() {
 
   return (
     <div
-      className={`fixed bottom-0 w-full flex justify-around bg-slate-100 ${heightClass} items-center`}
+      className={`fixed bottom-0 w-full flex justify-around bg-slate-100 ${heightClass} items-center z-50`}
     >
       {navItems.map((item) => (
         <NavDot

@@ -10,7 +10,7 @@ const FavsHomepage = () => {
         <ChevronRight size={22} className="mt-[5px]" />
       </div>
 
-      <div className="flex gap-5">
+      <div className="grid grid-cols-2 sm:grid-cols-3 gap-4">
         <SimpleFoodCard
           name="Turnip"
           icon={Turnip}
@@ -22,6 +22,14 @@ const FavsHomepage = () => {
         <SimpleFoodCard
           name="Turnip and Potato Gratin"
           icon="https://fieldsofmistria.wiki.gg/images/3/3f/Turnip_and_potato_gratin.png?bcf8c9&format=original"
+          season="spring"
+          seedPrice={25}
+          sellPrice={40}
+          isFavorited={false}
+        />
+        <SimpleFoodCard
+          name="Turnip"
+          icon={Turnip}
           season="spring"
           seedPrice={25}
           sellPrice={40}
