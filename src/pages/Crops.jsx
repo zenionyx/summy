@@ -1,7 +1,9 @@
 import { useParams } from "react-router-dom";
 import crops from "../assets/json/crops.json";
 import SimpleFoodCard from "../comps/mini/SimpleFoodCard";
+import SearchBar from "../comps/mini/SearchBar";
 import CropDetail from "./CropDetail";
+import { ChevronLeft, ListFilter } from "lucide-react";
 import { Link } from "react-router-dom";
 
 export default function Crops() {
@@ -11,7 +13,15 @@ export default function Crops() {
 
   return (
     <div>
-      <h2 className="text-2xl font-bold mb-4">All Crops</h2>
+      <div className="w-full flex items-center justify-between text-gray-600 pt-2 h-[64px] pb-4">
+        <Link to="/">
+          <ChevronLeft size="28" />
+        </Link>
+        <h1 className="text-2xl font-semibold">All Crops</h1>
+        <ListFilter size="28" />
+      </div>
+
+      <SearchBar placeholder="Search crops..."/>
 
       <div className="grid grid-cols-2 sm:grid-cols-3 gap-4">
         {crops.map((crop) => (

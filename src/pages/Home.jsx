@@ -9,15 +9,15 @@ const Home = () => {
       <HomeNav />
 
       {/* Search bar */}
-      <SearchBar />
+      <SearchBar placeholder="Search crops, fish and recipies..." />
 
       {/* Prep Lists */}
       <section></section>
 
       {/* Favourites Section */}
       <section>
-        <FavsHomepage/>
-        <FavsHomepage/>
+        <FavsHomepage />
+        <FavsHomepage />
       </section>
 
       {/* Seasonal Lists */}

@@ -3,7 +3,7 @@ import { useState, useEffect } from "react";
 import { useNavigate, useLocation } from "react-router-dom";
 import { Search, X } from "lucide-react";
 
-export default function SearchBar() {
+export default function SearchBar({ placeholder }) {
   const navigate = useNavigate();
   const { search } = useLocation();
   // grab initial query param if present
@@ -38,7 +38,7 @@ export default function SearchBar() {
         value={query}
         onChange={(e) => setQuery(e.target.value)}
         onKeyDown={handleKeyDown}
-        placeholder="Search crops, fish, recipes…"
+        placeholder={placeholder}
         className="w-full py-2 pl-12 pr-4 bg-white border border-gray-200 rounded-full placeholder-gray-400 focus:outline-none focus:ring-2 focus:ring-[#90dd6f]"
       />
       {query && (
