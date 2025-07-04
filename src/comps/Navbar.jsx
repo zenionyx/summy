@@ -1,5 +1,3 @@
-// src/components/Navbar.jsx
-import React from "react";
 import { House, Carrot, Fish, ChefHat, Search } from "lucide-react";
 import { Link, useLocation } from "react-router-dom";
 import useScreenSize from "../funcs/useScreenSize";
