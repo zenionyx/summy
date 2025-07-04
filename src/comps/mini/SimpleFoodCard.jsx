@@ -15,16 +15,19 @@ export default function SimpleFoodCard({
   sellPrice,
   isFavorited = false,
 }) {
-  const { icon: SeasonIcon, color } =
-    seasonMap[season.toLowerCase()] || seasonMap.spring;
+  const lowerSeason = season?.toLowerCase();
+  const seasonInfo = seasonMap[lowerSeason];
 
   return (
     <div className="relative w-full h-56 bg-white rounded-2xl shadow-sm border border-slate-200 p-4 py-5 flex flex-col justify-between overflow-hidden">
-
-      {/* Season Icon Top-Right */}
-      <div className={`absolute top-0 right-0 p-2 rounded-bl-xl  ${color}`}>
-        <SeasonIcon className="w-5 h-5" />
-      </div>
+      {/* Season Icon Top-Right (conditionally rendered) */}
+      {seasonInfo && (
+        <div
+          className={`absolute top-0 right-0 p-2 rounded-bl-xl ${seasonInfo.color}`}
+        >
+          <seasonInfo.icon className="w-5 h-5" />
+        </div>
+      )}
 
       {/* Icon */}
       <div className="flex justify-center mt-2">
@@ -42,12 +45,12 @@ export default function SimpleFoodCard({
 
       {/* Prices */}
       <div className="text-center text-lg mt-1 flex items-center gap-2 justify-center">
-        <p className=" font-semibold text-gray-800  flex items-center  gap-1">
+        <p className="font-semibold text-gray-800 flex items-center gap-1">
           <BadgeCent className="fill-yellow-100 text-yellow-500 w-5" />
           {seedPrice}t
         </p>
         <p>·</p>
-        <p className=" text-gray-500">{sellPrice}t</p>
+        <p className="text-gray-500">{sellPrice}t</p>
       </div>
 
       {/* Heart Top-Left */}

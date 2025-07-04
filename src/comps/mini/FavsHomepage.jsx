@@ -20,19 +20,27 @@ const FavsHomepage = () => {
           isFavorited={false}
         />
         <SimpleFoodCard
+          name="Chili Pepper"
+          icon="https://fieldsofmistria.wiki.gg/images/6/60/Chili_pepper.png?ebfc25"
+          season="summer"
+          seedPrice={40}
+          sellPrice={75}
+          isFavorited={false}
+        />
+        <SimpleFoodCard
           name="Turnip and Potato Gratin"
           icon="https://fieldsofmistria.wiki.gg/images/3/3f/Turnip_and_potato_gratin.png?bcf8c9&format=original"
-          season="spring"
+          season=""
           seedPrice={25}
           sellPrice={40}
           isFavorited={false}
         />
         <SimpleFoodCard
-          name="Turnip"
-          icon={Turnip}
-          season="spring"
-          seedPrice={25}
-          sellPrice={40}
+          name="Apple"
+          icon="https://fieldsofmistria.wiki.gg/images/7/7d/Apple.png?bfa8b3"
+          season="autumn"
+          seedPrice={400}
+          sellPrice={45}
           isFavorited={false}
         />
       </div>
