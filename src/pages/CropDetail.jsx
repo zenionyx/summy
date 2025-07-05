@@ -1,4 +1,4 @@
-import { useParams, Link } from "react-router-dom";
+import { useParams, useNavigate } from "react-router-dom";
 import {
   ChevronLeft,
   Heart,
@@ -19,6 +19,7 @@ const seasonMap = {
 };
 
 export default function CropDetail({ isFavorited = false }) {
+  const navigate = useNavigate();
   const { id } = useParams();
   const crop = crops.find((c) => c.id === id);
 
@@ -39,12 +40,12 @@ export default function CropDetail({ isFavorited = false }) {
       {/* Back Button + Heart + Image */}
       <section className="w-full flex-x-center items-center flex-col p-[1rem] mb-10">
         <div className="flex justify-between w-full pt-2 h-[64px] pb-4">
-          <Link
-            to="/crops"
+          <button
+            onClick={() => navigate(-1)}
             className="bg-white rounded-full w-10 h-10 flex justify-center items-center pr-[2px] shadow hover:shadow-md hover:bg-slate-50"
           >
             <ChevronLeft size="28" />
-          </Link>
+          </button>
           <div className="w-10 h-10 rounded-full bg-red-100 flex justify-center items-center shadow hover:shadow-md">
             <Heart
               className={`w-5 h-5 ${
@@ -107,8 +108,7 @@ export default function CropDetail({ isFavorited = false }) {
               <p>Growth Time</p>
               <p>{crop.growthTime} days</p>
             </div>
-          )
-          }
+          )}
 
           {!noRegrowth && (
             <div>
