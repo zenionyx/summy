@@ -1,39 +1,44 @@
-@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@100..900&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Outfit:wght@100..900&display=swap");
 
 body {
-    font-family: "Outfit", sans-serif;
+  font-family: "Outfit", sans-serif;
 }
 
 .profilePic {
-    background-image: url('https://i.pinimg.com/736x/d7/80/c3/d780c35e99fd92d0b00dbece45a2644e.jpg');
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
+  background-image: url("https://i.pinimg.com/736x/d7/80/c3/d780c35e99fd92d0b00dbece45a2644e.jpg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
 }
 
-.detailList div {
-@apply flex items-center justify-between;
-& p:first-of-type {
-@apply font-semibold;
+.detailList > div {
+  @apply flex items-start justify-between;
+
+  & > p:first-of-type {
+    @apply font-semibold text-xl text-slate-500;
+  }
 }
+
+.detailList > div:first-of-type {
+  @apply font-semibold text-xl text-slate-500;
 }
 
 .flex-all-center {
-    display: flex;
-    justify-content: center;
-    align-items: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 .flex-x-center {
-    display: flex;
-    justify-content: center;
+  display: flex;
+  justify-content: center;
 }
 .flex-y-center {
-    display: flex;
-    align-items: center;
+  display: flex;
+  align-items: center;
 }
 .flex-x-between {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
 }

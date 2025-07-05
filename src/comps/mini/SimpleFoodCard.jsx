@@ -1,55 +1,52 @@
-import {
-  Flower,
-  Sun,
-  Leaf,
-  Snowflake,
-  Heart,
-  BadgeCent,
-  TreePine,
-} from "lucide-react";
+import { Flower, Sun, Leaf, Snowflake, BadgeCent, Heart, TreePine } from "lucide-react";
 
 const seasonMap = {
   spring: { icon: Flower, color: "bg-green-100 text-green-700" },
   summer: { icon: Sun, color: "bg-yellow-100 text-yellow-700" },
-  autumn: { icon: Leaf, color: "bg-orange-100 text-orange-700" },
+  fall: { icon: Leaf, color: "bg-orange-100 text-orange-700" },
   winter: { icon: Snowflake, color: "bg-blue-100 text-blue-700" },
 };
 
 export default function SimpleFoodCard({
   name,
   icon,
-  season,
+  season = [],
   seedPrice,
   sellPrice,
   isFavorited = false,
 }) {
-  const lowerSeason = season?.toLowerCase();
-  const seasonInfo = seasonMap[lowerSeason];
-  const isForage = seedPrice === 0;
-
+    const isForage = seedPrice === 0;
   return (
-    <div className="relative w-full h-56 bg-white rounded-2xl shadow-sm border border-slate-200 p-4 py-5 flex flex-col justify-between overflow-hidden hover:bg-slate-100 hover:shadow-md">
-      {seasonInfo && (
-        <div
-          className={`absolute top-0 right-0 p-2 rounded-bl-xl ${seasonInfo.color}`}
-        >
-          <seasonInfo.icon className="w-5 h-5" />
-        </div>
-      )}
-
-      <div className="flex justify-center mt-2">
-        <img src={icon} alt={name} className="w-22 h-22" />
-      </div>
-
+    <div className="relative w-full h-[230px] bg-white rounded-2xl shadow-sm border border-slate-200 p-4 py-5 flex flex-col justify-between items-center overflow-hidden hover:bg-slate-100 hover:shadow-md">
+      <img src={icon} alt={name} className="w-12 h-12" />
       <h3
-        className={`text-center font-medium mt-2 w-full h-10 flex justify-center items-center ${
-          name.length > 14 ? "text-base" : "text-xl"
+        className={`text-center font-medium mt-2 w-full flex justify-center items-center ${
+          name.length > 13 ? "text-base" : "text-xl"
         } line-clamp-2`}
       >
         {name}
       </h3>
 
-      <div className="text-center text-lg mt-1 flex items-center gap-2 justify-center">
+      {/* Season Pills */}
+      <div className="flex gap-1 flex-wrap justify-center">
+        {season.map((s, i) => {
+          const data = seasonMap[s.toLowerCase()];
+          if (!data) return null;
+
+          const { icon: Icon, color } = data;
+
+          return (
+            <div
+              key={i}
+              className={`w-6 h-6 rounded-full flex items-center justify-center ${color}`}
+            >
+              <Icon className="w-3.5 h-3.5" />
+            </div>
+          );
+        })}
+      </div>
+
+      <div className="text-center text-base mt-1 flex items-center gap-2 justify-center">
         {isForage ? (
           <p className="font-semibold text-green-200 flex justify-center items-center gap-1 w-6 h-6 bg-green-700 rounded-full">
             <TreePine className="w-4 h-4 " />
@@ -63,8 +60,7 @@ export default function SimpleFoodCard({
         <p>·</p>
         <p className="text-gray-500">{sellPrice}t</p>
       </div>
-
-      <div className="absolute top-0 left-0 p-2 rounded-br-xl text-gray-400 bg-red-100">
+      <div className="absolute top-0 right-0 p-2 rounded-bl-xl text-gray-400 bg-red-100">
         <Heart
           className={`w-5 h-5 ${
             isFavorited
