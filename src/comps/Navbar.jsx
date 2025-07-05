@@ -58,7 +58,7 @@ export default function Navbar() {
         <NavDot
           key={item.to}
           {...item}
-          isActive={pathname === item.to}
+          isActive={pathname === item.to || pathname.startsWith(item.to + "/")}
           screen={screen}
         />
       ))}
