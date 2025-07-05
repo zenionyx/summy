@@ -1,7 +1,7 @@
 import SearchNav from "../comps/mini/SearchNav";
 const Search = () => {
   return (
-    <div>
+    <div className="p-[1rem]">
       {/* Top Section */}
       <SearchNav />
     </div>

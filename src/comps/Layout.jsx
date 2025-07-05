@@ -6,8 +6,8 @@ function Layout() {
   return (
     <>
       <Navbar />
-      <main style={{ padding: "1rem" }}>
-        <Outlet /> {/* ← renders the matched child route */}
+      <main>
+        <Outlet />
       </main>
     </>
   );

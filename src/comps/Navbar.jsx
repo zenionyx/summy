@@ -3,11 +3,11 @@ import { Link, useLocation } from "react-router-dom";
 import useScreenSize from "../funcs/useScreenSize";
 
 const navItems = [
-  { to: "/", Icon: House, color: "bg-[#90dd6f]" },
-  { to: "/search", Icon: Search, color: "bg-[#F2C94C]" },
-  { to: "/crops", Icon: Carrot, color: "bg-[#FFA248]" },
-  { to: "/fish", Icon: Fish, color: "bg-[#52A6E4]" },
-  { to: "/recipes", Icon: ChefHat, color: "bg-[#F898B7]" },
+  { to: "/", Icon: House, color: "bg-mm-green" },
+  { to: "/search", Icon: Search, color: "bg-mm-yellow" },
+  { to: "/crops", Icon: Carrot, color: "bg-mm-orange" },
+  { to: "/fish", Icon: Fish, color: "bg-mm-blue" },
+  { to: "/recipes", Icon: ChefHat, color: "bg-mm-pink" },
 ];
 
 function NavDot({ to, Icon, color, isActive, screen }) {

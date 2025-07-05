@@ -10,3 +10,30 @@ body {
     background-repeat: no-repeat;
     background-size: cover;
 }
+
+.detailList div {
+@apply flex items-center justify-between;
+& p:first-of-type {
+@apply font-semibold;
+}
+}
+
+.flex-all-center {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.flex-x-center {
+    display: flex;
+    justify-content: center;
+}
+.flex-y-center {
+    display: flex;
+    align-items: center;
+}
+.flex-x-between {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}

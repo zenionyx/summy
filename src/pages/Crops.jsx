@@ -12,7 +12,7 @@ export default function Crops() {
   if (id) return <CropDetail />;
 
   return (
-    <div>
+    <div className="p-[1rem]">
       <div className="w-full flex items-center justify-between text-gray-600 pt-2 h-[64px] pb-4">
         <Link to="/">
           <ChevronLeft size="28" />

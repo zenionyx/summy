@@ -4,7 +4,7 @@ import FavsHomepage from "../comps/mini/FavsHomepage";
 
 const Home = () => {
   return (
-    <div>
+    <div className="p-[1rem]">
       {/* Top Section */}
       <HomeNav />
 
