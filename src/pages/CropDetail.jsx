@@ -11,6 +11,8 @@ import {
 } from "lucide-react";
 import { useState } from "react";
 import crops from "../assets/json/crops.json";
+import locations from "../assets/json/locations.json"
+import MiniCards from "../comps/mini/MiniCards";
 
 const seasonMap = {
   spring: { icon: Flower, color: "bg-green-100 text-green-700" },
@@ -192,20 +194,26 @@ export default function CropDetail({ isFavorited = false }) {
 
           {/* Location Section start */}
           {activeTab === "locations" && crop.forageLocation?.length > 0 ? (
-            <div>
-              <h3>Location</h3>
-              <div className="flex flex-col gap-1">
-                {crop.forageLocation.map((loc, i) => (
-                  <p
+            <div className="grid grid-cols-2 gap-4 justify-start">
+              {crop.forageLocation.map((loc, i) => {
+                const locationData = locations.find(
+                  (l) => l.name.toLowerCase() === loc.toLowerCase()
+                );
+
+                return locationData ? (
+                  <MiniCards
                     key={i}
-                    className={`text-right ${
-                      loc.toLowerCase() === "no set spawn" ? "text-red-500" : ""
-                    }`}
-                  >
-                    {loc}
-                  </p>
-                ))}
-              </div>
+                    title={locationData.name}
+                    imageURL={locationData.imageURL}
+                  />
+                ) : (
+                  <MiniCards
+                    key={i}
+                    title={loc}
+                    imageURL="https://via.placeholder.com/100?text=No+Image"
+                  />
+                );
+              })}
             </div>
           ) : null}
           {/* Location Section End */}

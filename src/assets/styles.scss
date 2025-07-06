@@ -12,11 +12,15 @@ body {
 }
 
 .detailList > div {
-  @apply flex items-start justify-between;
+  @apply flex items-start justify-between ;
 }
 
 .detailList h3 {
   @apply font-semibold text-lg text-slate-500;
+}
+
+.gridView {
+  @apply grid grid-cols-2 justify-start gap-4;
 }
 
 .myBlur {
