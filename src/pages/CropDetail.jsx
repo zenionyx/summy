@@ -38,7 +38,7 @@ export default function CropDetail({ isFavorited = false }) {
   return (
     <div className="w-full bg-[#eff6ff]">
       {/* Back Button + Heart + Image */}
-      <section className="w-full flex-x-center items-center flex-col p-[1rem] mb-10">
+      <section className="w-full flex-x-center items-center flex-col p-[1rem] mb-6">
         <div className="flex justify-between w-full pt-2 h-[64px] pb-4">
           <button
             onClick={() => navigate(-1)}
@@ -123,6 +123,11 @@ export default function CropDetail({ isFavorited = false }) {
               <BadgeCent className="fill-yellow-100 text-yellow-500 w-5" />
               {crop.sellPrice}t
             </p>
+          </div>
+
+          <div>
+            <p>Source</p>
+            <p>{crop.source}</p>
           </div>
 
           <div>
