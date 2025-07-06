@@ -26,21 +26,24 @@ export default function Search() {
           setSearchParams({ query: newQuery });
         }}
       />
-
-      <div className="grid grid-cols-2 sm:grid-cols-3 gap-4">
-        {(query ? filteredCrops : crops).map((crop) => (
-          <Link key={crop.id} to={`/crops/${crop.id}`}>
-            <SimpleFoodCard
-              name={crop.name}
-              icon={crop.image}
-              season={crop.season}
-              seedPrice={crop.seedPrice}
-              sellPrice={crop.sellPrice}
-              isFavorited={false}
-            />
-          </Link>
-        ))}
-      </div>
+      {query && filteredCrops.length === 0 ? (
+        <p className="text-gray-500 text-center mt-6 text-lg">No items found</p>
+      ) : (
+        <div className="grid grid-cols-2 sm:grid-cols-3 gap-4">
+          {(query ? filteredCrops : crops).map((crop) => (
+            <Link key={crop.id} to={`/crops/${crop.id}`}>
+              <SimpleFoodCard
+                name={crop.name}
+                icon={crop.image}
+                season={crop.season}
+                seedPrice={crop.seedPrice}
+                sellPrice={crop.sellPrice}
+                isFavorited={false}
+              />
+            </Link>
+          ))}
+        </div>
+      )}
     </div>
   );
 }

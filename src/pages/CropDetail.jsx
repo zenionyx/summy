@@ -183,7 +183,7 @@ export default function CropDetail({ isFavorited = false }) {
                 <p>{crop.donateable ? "Yes" : "No"}</p>
               </div>
               <div>
-                <p>Museum Set</p>
+                <h3>Museum Set</h3>
                 <p>{crop.museumSet}</p>
               </div>
             </>
