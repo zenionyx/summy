@@ -2,7 +2,7 @@ import { Link } from "react-router-dom";
 import { ChevronLeft, ListFilter } from "lucide-react";
 import SearchBar from "./SearchBar";
 
-export default function SearchNav({ onQueryChange }) {
+export default function SearchNav({ onQueryChange, initialValue }) {
   return (
     <>
       <div className="w-full flex items-center justify-between text-gray-600 pt-2 h-[64px] pb-4">
@@ -16,7 +16,9 @@ export default function SearchNav({ onQueryChange }) {
       <SearchBar
         placeholder="Search crops, fish and recipes..."
         onChange={onQueryChange}
+        initialValue={initialValue}
       />
     </>
   );
 }
+
