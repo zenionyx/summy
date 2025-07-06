@@ -11,7 +11,7 @@ import {
 } from "lucide-react";
 import { useState } from "react";
 import crops from "../assets/json/crops.json";
-import locations from "../assets/json/locations.json"
+import locations from "../assets/json/locations.json";
 import MiniCards from "../comps/mini/MiniCards";
 import ImageModal from "../comps/mini/ImageModal";
 
@@ -29,7 +29,8 @@ export default function CropDetail({ isFavorited = false }) {
 
   const [activeTab, setActiveTab] = useState("details");
   const [modalImage, setModalImage] = useState(null);
-
+  const [seedCalcQty, setSeedCalcQty] = useState(1);
+  const [sellCalcQty, setSellCalcQty] = useState(1);
 
   if (!crop) return <p className="mt-4 text-red-500">Crop not found.</p>;
 
@@ -106,6 +107,12 @@ export default function CropDetail({ isFavorited = false }) {
             Details
           </p>
           <p
+            className={activeTab === "calculator" ? "active" : ""}
+            onClick={() => setActiveTab("calculator")}
+          >
+            Calculator
+          </p>
+          <p
             className={activeTab === "collect" ? "active" : ""}
             onClick={() => setActiveTab("collect")}
           >
@@ -179,6 +186,85 @@ export default function CropDetail({ isFavorited = false }) {
             </>
           ) : null}
           {/* Details Section end */}
+
+          {/* Calculator Section start */}
+          {activeTab === "calculator" ? (
+            <div className="flex flex-col gap-6">
+              {/* Seed Price Calculator */}
+              {!isForage && (
+                <div className="w-full">
+                  <h3 className="font-semibold mb-2">Seed Price</h3>
+                  <div className="flex items-center justify-between">
+                    <p className="flex gap-2">
+                      <span>
+                        <BadgeCent className="fill-yellow-100 text-yellow-500 w-5" />
+                      </span>
+                      {crop.seedPrice}t / seed
+                    </p>
+                    <div className="flex items-center gap-2">
+                      <button
+                        onClick={() =>
+                          setSeedCalcQty((prev) => Math.max(1, prev - 1))
+                        }
+                        className="w-8 h-8 rounded bg-slate-200 flex items-center justify-center font-bold text-slate-500"
+                      >
+                        -
+                      </button>
+                      <span className="w-10 text-center font-semibold">
+                        {seedCalcQty}
+                      </span>
+                      <button
+                        onClick={() => setSeedCalcQty((prev) => prev + 1)}
+                        className="w-8 h-8 rounded bg-slate-200 flex items-center justify-center font-bold text-slate-500"
+                      >
+                        +
+                      </button>
+                    </div>
+                  </div>
+                  <p className="mt-2 text-gray-500 text-right">
+                    Total: {crop.seedPrice * seedCalcQty}t
+                  </p>
+                </div>
+              )}
+
+              {/* Sell Price Calculator */}
+              <div className="w-full">
+                <h3 className="font-semibold mb-2">Sell Price</h3>
+                <div className="flex items-center justify-between">
+                  <p className="flex gap-2">
+                    <span>
+                      <BadgeCent className="fill-yellow-100 text-yellow-500 w-5" />
+                    </span>
+                    {crop.sellPrice}t / item
+                  </p>
+                  <div className="flex items-center gap-2">
+                    <button
+                      onClick={() =>
+                        setSellCalcQty((prev) => Math.max(1, prev - 1))
+                      }
+                      className="w-8 h-8 rounded bg-slate-200 text-slate-500 flex items-center justify-center font-bold"
+                    >
+                      -
+                    </button>
+                    <span className="w-10 text-center font-semibold">
+                      {sellCalcQty}
+                    </span>
+                    <button
+                      onClick={() => setSellCalcQty((prev) => prev + 1)}
+                      className="w-8 h-8 rounded bg-slate-200 flex items-center justify-center font-bold text-slate-500"
+                    >
+                      +
+                    </button>
+                  </div>
+                </div>
+                <p className="mt-2 text-right text-gray-500">
+                  Total: {crop.sellPrice * sellCalcQty}t
+                </p>
+              </div>
+            </div>
+          ) : null}
+
+          {/* Calculator Section start */}
 
           {/* Collect Section start */}
           {activeTab === "collect" ? (
