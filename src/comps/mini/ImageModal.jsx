@@ -7,7 +7,7 @@ export default function ImageModal({ imageURL, onClose }) {
     >
       <div
         className="bg-white rounded-lg p-2 max-w-[90%] max-h-[80%]"
-        onClick={(e) => e.stopPropagation()} // prevent closing when clicking image
+        onClick={(e) => e.stopPropagation()}
       >
         <img
           src={imageURL}
