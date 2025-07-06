@@ -7,7 +7,7 @@ export default function SearchBar({ placeholder, onChange }) {
   const handleInput = (e) => {
     const value = e.target.value;
     setQuery(value);
-    onChange?.(value); // Call parent update
+    onChange?.(value);
   };
 
   return (

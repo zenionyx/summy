@@ -7,9 +7,14 @@ import { ChevronLeft, ListFilter } from "lucide-react";
 import { Link } from "react-router-dom";
 
 export default function Crops() {
+  const [query, setQuery] = useState("");
   const { id } = useParams();
-
   if (id) return <CropDetail />;
+
+  // Filter crops when searching
+    const filteredCrops = crops.filter((crop) =>
+    crop.name.toLowerCase().startsWith(query.toLowerCase())
+  );
 
   return (
     <div className="p-[1rem]">
@@ -21,10 +26,10 @@ export default function Crops() {
         <ListFilter size="28" />
       </div>
 
-      <SearchBar placeholder="Search crops..."/>
+      <SearchBar onChange={setQuery} placeholder="Search crops..."/>
 
       <div className="grid grid-cols-2 sm:grid-cols-3 gap-4">
-        {crops.map((crop) => (
+        {(query ? filteredCrops : crops).map((crop) => (
           <Link key={crop.id} to={`/crops/${crop.id}`}>
             <SimpleFoodCard
               id={crop.id}
