@@ -183,7 +183,7 @@
     "sellPrice": 35,
     "donateable": true,
     "museumSet": "Spring Flower",
-    "forageLocation": []
+    "forageLocation": ["The Eastern Road", "Sweetwater Farm"]
   },
   {
     "id": "cherry",
