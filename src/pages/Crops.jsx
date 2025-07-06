@@ -1,18 +1,24 @@
-import { useParams } from "react-router-dom";
+import { useState, useEffect } from "react";
+import { useSearchParams, Link, useParams } from "react-router-dom";
 import crops from "../assets/json/crops.json";
 import SimpleFoodCard from "../comps/mini/SimpleFoodCard";
 import SearchBar from "../comps/mini/SearchBar";
 import CropDetail from "./CropDetail";
 import { ChevronLeft, ListFilter } from "lucide-react";
-import { Link } from "react-router-dom";
 
 export default function Crops() {
-  const [query, setQuery] = useState("");
   const { id } = useParams();
+  const [searchParams, setSearchParams] = useSearchParams();
+  const initialQuery = searchParams.get("query") || "";
+  const [query, setQuery] = useState(initialQuery);
+
+  useEffect(() => {
+    setQuery(initialQuery);
+  }, [initialQuery]);
+
   if (id) return <CropDetail />;
 
-  // Filter crops when searching
-    const filteredCrops = crops.filter((crop) =>
+  const filteredCrops = crops.filter((crop) =>
     crop.name.toLowerCase().startsWith(query.toLowerCase())
   );
 
@@ -26,7 +32,12 @@ export default function Crops() {
         <ListFilter size="28" />
       </div>
 
-      <SearchBar onChange={setQuery} placeholder="Search crops..."/>
+      <SearchBar
+        placeholder="Search crops..."
+        onChange={setQuery}
+        onEnter={(q) => setSearchParams({ query: q })}
+        initialValue={initialQuery}
+      />
 
       <div className="grid grid-cols-2 sm:grid-cols-3 gap-4">
         {(query ? filteredCrops : crops).map((crop) => (

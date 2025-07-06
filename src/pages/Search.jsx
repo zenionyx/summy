@@ -5,7 +5,7 @@ import SimpleFoodCard from "../comps/mini/SimpleFoodCard";
 import SearchNav from "../comps/mini/SearchNav";
 
 export default function Search() {
-  const [searchParams] = useSearchParams();
+  const [searchParams, setSearchParams] = useSearchParams();
   const initialQuery = searchParams.get("query") || "";
   const [query, setQuery] = useState(initialQuery);
   const { id } = useParams();
@@ -18,7 +18,14 @@ export default function Search() {
 
   return (
     <div className="p-[1rem]">
-      <SearchNav onQueryChange={setQuery} initialValue={initialQuery} />
+      <SearchNav
+        onQueryChange={setQuery}
+        initialValue={initialQuery}
+        onEnter={(newQuery) => {
+          setQuery(newQuery);
+          setSearchParams({ query: newQuery });
+        }}
+      />
 
       <div className="grid grid-cols-2 sm:grid-cols-3 gap-4">
         {(query ? filteredCrops : crops).map((crop) => (
