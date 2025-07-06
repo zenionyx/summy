@@ -13,6 +13,7 @@ import { useState } from "react";
 import crops from "../assets/json/crops.json";
 import locations from "../assets/json/locations.json"
 import MiniCards from "../comps/mini/MiniCards";
+import ImageModal from "../comps/mini/ImageModal";
 
 const seasonMap = {
   spring: { icon: Flower, color: "bg-green-100 text-green-700" },
@@ -27,6 +28,8 @@ export default function CropDetail({ isFavorited = false }) {
   const crop = crops.find((c) => c.id === id);
 
   const [activeTab, setActiveTab] = useState("details");
+  const [modalImage, setModalImage] = useState(null);
+
 
   if (!crop) return <p className="mt-4 text-red-500">Crop not found.</p>;
 
@@ -205,6 +208,7 @@ export default function CropDetail({ isFavorited = false }) {
                     key={i}
                     title={locationData.name}
                     imageURL={locationData.imageURL}
+                    onClick={() => setModalImage(locationData.imageURL)}
                   />
                 ) : (
                   <MiniCards
@@ -226,6 +230,9 @@ export default function CropDetail({ isFavorited = false }) {
           ) : null}
         </div>
       </section>
+      {modalImage && (
+        <ImageModal imageURL={modalImage} onClose={() => setModalImage(null)} />
+      )}
     </div>
   );
 }
