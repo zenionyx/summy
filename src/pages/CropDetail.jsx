@@ -283,7 +283,7 @@ export default function CropDetail({ isFavorited = false }) {
 
           {/* Location Section start */}
           {activeTab === "locations" && crop.forageLocation?.length > 0 ? (
-            <div className=" grid-cols-2 sm:grid-cols-2 gap-4 !grid">
+            <div className=" grid-cols-2 sm:grid-cols-2 md:grid-cols-4 gap-4 !grid">
               {crop.forageLocation.map((loc, i) => {
                 const locationData = locations.find(
                   (l) => l.name.toLowerCase() === loc.toLowerCase()
@@ -295,6 +295,7 @@ export default function CropDetail({ isFavorited = false }) {
                     title={locationData.name}
                     imageURL={locationData.imageURL}
                     onClick={() => setModalImage(locationData.imageURL)}
+                    type="crop"
                   />
                 ) : (
                   <MiniCards
