@@ -4,24 +4,22 @@ import {
   useLocation,
   Link,
   useParams,
-  useNavigate,
 } from "react-router-dom";
 import crops from "../assets/json/crops.json";
 import SimpleFoodCard from "../comps/mini/SimpleFoodCard";
+import CropFilters from "../comps/mini/CropFilters";
 import SearchBar from "../comps/mini/SearchBar";
 import CropDetail from "./CropDetail";
-import { ChevronLeft, ListFilter } from "lucide-react";
+import { ChevronLeft } from "lucide-react";
 
 export default function Crops() {
   const { id } = useParams();
   const location = useLocation();
-  const navigate = useNavigate();
   const [searchParams, setSearchParams] = useSearchParams();
 
   const initialQuery = searchParams.get("query") || "";
   const [query, setQuery] = useState(initialQuery);
 
-  // 🔄 Clear query param + state if we're on base /crops route
   useEffect(() => {
     if (!id && initialQuery) {
       setQuery("");
@@ -29,11 +27,100 @@ export default function Crops() {
     }
   }, [location.pathname]);
 
-  if (id) return <CropDetail />;
-
   const filteredCrops = crops.filter((crop) =>
     crop.name.toLowerCase().startsWith(query.toLowerCase())
   );
+
+  const [filters, setFilters] = useState(null);
+
+  const handleFilterApply = (appliedFilters) => {
+    setFilters(appliedFilters);
+  };
+
+
+  const applyFilters = (data) => {
+    if (!filters) return data;
+
+    let filtered = [...data];
+
+    // Season
+    if (filters.season.length) {
+      filtered = filtered.filter((crop) =>
+        crop.season?.some((s) => filters.season.includes(s.toLowerCase()))
+      );
+    }
+
+    // Donatable
+    if (filters.donatable) {
+      filtered = filtered.filter((crop) => crop.donateable);
+    }
+
+    // Favourites (add real logic if available)
+    if (filters.favorites) {
+      filtered = filtered.filter((crop) => crop.isFavorited);
+    }
+
+    if (filters.location.length) {
+      filtered = filtered.filter(
+        (crop) =>
+          crop.source === "Foraging" &&
+          crop.forageLocation?.some((loc) => filters.location.includes(loc))
+      );
+    }
+
+    // Sort
+    switch (filters.sortBy) {
+      case "az":
+        filtered.sort((a, b) => a.name.localeCompare(b.name));
+        break;
+      case "za":
+        filtered.sort((a, b) => b.name.localeCompare(a.name));
+        break;
+      case "season":
+        const seasonOrder = ["spring", "summer", "fall", "winter"];
+        filtered.sort((a, b) => {
+          return (
+            seasonOrder.indexOf(a.season?.[0]?.toLowerCase()) -
+            seasonOrder.indexOf(b.season?.[0]?.toLowerCase())
+          );
+        });
+        break;
+      case "sellLowHigh":
+        filtered.sort((a, b) => a.sellPrice - b.sellPrice);
+        break;
+      case "sellHighLow":
+        filtered.sort((a, b) => b.sellPrice - a.sellPrice);
+        break;
+      case "seedLowHigh":
+        filtered.sort((a, b) => a.seedPrice - b.seedPrice);
+        break;
+      case "seedHighLow":
+        filtered.sort((a, b) => b.seedPrice - a.seedPrice);
+        break;
+      default:
+        break;
+    }
+
+    return filtered;
+  };
+  
+  const cropsToShow = query ? filteredCrops : applyFilters(crops);
+
+  useEffect(() => {
+    if (!id) {
+      setFilters(null);
+    }
+  }, [id]);
+
+  useEffect(() => {
+    if (location.state?.fromDetailPage) {
+      setFilters(null);
+      // clear temp state if needed
+      setSearchParams({});
+    }
+  }, [location.state]);
+
+  if (id) return <CropDetail />;
 
   return (
     <div className="p-[1rem]">
@@ -42,7 +129,7 @@ export default function Crops() {
           <ChevronLeft size="28" />
         </Link>
         <h1 className="text-2xl font-semibold">All Crops</h1>
-        <ListFilter size="28" />
+        <CropFilters onApply={handleFilterApply} filters={filters} />
       </div>
 
       <SearchBar
@@ -52,11 +139,11 @@ export default function Crops() {
         initialValue={query}
       />
 
-      {query && filteredCrops.length === 0 ? (
+      {cropsToShow.length === 0 ? (
         <p className="text-gray-500 text-center mt-6 text-lg">No items found</p>
       ) : (
         <div className="grid grid-cols-2 sm:grid-cols-3 gap-4">
-          {(query ? filteredCrops : crops).map((crop) => (
+          {cropsToShow.map((crop) => (
             <Link key={crop.id} to={`/crops/${crop.id}`}>
               <SimpleFoodCard
                 id={crop.id}
