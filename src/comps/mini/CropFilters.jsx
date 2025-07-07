@@ -84,7 +84,7 @@ export default function CropFilters({ onApply, filters }) {
   return (
     <div className="relative">
       <button onClick={() => setShow((prev) => !prev)}>
-        <ListFilter size={28} />
+        <ListFilter size={28} className="mt-[7px]" />
       </button>
 
       {show && (
