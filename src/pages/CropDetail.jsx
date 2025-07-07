@@ -157,6 +157,17 @@ export default function CropDetail({ isFavorited = false }) {
                 </div>
               )}
 
+              {Array.isArray(crop.type) && crop.type.length > 0 && (
+                <div>
+                  <h3>Type</h3>
+                  <p>
+                    {crop.type
+                      .map((t) => t.charAt(0).toUpperCase() + t.slice(1))
+                      .join(", ")}
+                  </p>
+                </div>
+              )}
+
               {crop.growthTime != 0 && (
                 <div>
                   <h3>Growth Time</h3>

@@ -1,5 +1,11 @@
 import { useState, useEffect } from "react";
-import { useSearchParams, Link, useParams } from "react-router-dom";
+import {
+  useSearchParams,
+  useLocation,
+  Link,
+  useParams,
+  useNavigate,
+} from "react-router-dom";
 import crops from "../assets/json/crops.json";
 import SimpleFoodCard from "../comps/mini/SimpleFoodCard";
 import SearchBar from "../comps/mini/SearchBar";
@@ -8,13 +14,20 @@ import { ChevronLeft, ListFilter } from "lucide-react";
 
 export default function Crops() {
   const { id } = useParams();
+  const location = useLocation();
+  const navigate = useNavigate();
   const [searchParams, setSearchParams] = useSearchParams();
+
   const initialQuery = searchParams.get("query") || "";
   const [query, setQuery] = useState(initialQuery);
 
+  // 🔄 Clear query param + state if we're on base /crops route
   useEffect(() => {
-    setQuery(initialQuery);
-  }, [initialQuery]);
+    if (!id && initialQuery) {
+      setQuery("");
+      setSearchParams({});
+    }
+  }, [location.pathname]);
 
   if (id) return <CropDetail />;
 
@@ -36,7 +49,7 @@ export default function Crops() {
         placeholder="Search crops..."
         onChange={setQuery}
         onEnter={(q) => setSearchParams({ query: q })}
-        initialValue={initialQuery}
+        initialValue={query}
       />
 
       {query && filteredCrops.length === 0 ? (
