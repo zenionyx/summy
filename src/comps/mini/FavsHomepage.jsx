@@ -30,7 +30,7 @@ const FavsHomepage = () => {
           <Link
             key={crop.id}
             to={`/crops/${crop.id}`}
-            className="flex-shrink-0 w-[140px]"
+            className="flex-shrink-0 w-[156px]"
           >
             <SimpleFoodCard
               id={crop.id}
