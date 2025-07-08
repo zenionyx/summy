@@ -1,4 +1,4 @@
-import { useState, useEffect } from "react";
+import { useState } from "react";
 import { useSearchParams, Link, useParams } from "react-router-dom";
 import crops from "../assets/json/crops.json";
 import SimpleFoodCard from "../comps/mini/SimpleFoodCard";
