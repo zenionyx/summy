@@ -1,22 +1,37 @@
 import SimpleFoodCard from "./SimpleFoodCard";
 import { ChevronRight } from "lucide-react";
 import crops from "../../assets/json/crops.json";
-import { useParams, Link } from "react-router-dom";
+import { useParams, Link, useNavigate } from "react-router-dom";
+import CropDetail from "../../pages/CropDetail";
 
 const FavsHomepage = () => {
   const { id } = useParams();
-  
-    if (id) return <CropDetail />;
+  const navigate = useNavigate();
+
+  if (id) return <CropDetail />;
+
+  // ✨ Dummy logic for now – replace with real favorites filtering
+  const favoritedCrops = crops.filter((crop) => crop.isFavorited).slice(0, 10); // Max 10 crops
+
   return (
     <>
-      <div className="flex gap-1 items-center mb-4 hover:text-[#90dd6f] focus:text-[#90dd6f]">
+      {/* Title that navigates to /favourites */}
+      <div
+        className="flex gap-1 items-center mb-4 hover:text-[#90dd6f] cursor-pointer"
+        onClick={() => navigate("/favourites")}
+      >
         <h2 className="text-2xl font-semibold">Favourites</h2>
         <ChevronRight size={22} className="mt-[5px]" />
       </div>
 
-      <div className="grid grid-cols-2 sm:grid-cols-3 gap-4">
-        {crops.map((crop) => (
-          <Link key={crop.id} to={`/crops/${crop.id}`}>
+      {/* Horizontal scroll of favorite cards */}
+      <div className="flex gap-4 overflow-x-auto scrollbar-hide pb-2">
+        {favoritedCrops.map((crop) => (
+          <Link
+            key={crop.id}
+            to={`/crops/${crop.id}`}
+            className="flex-shrink-0 w-[140px]"
+          >
             <SimpleFoodCard
               id={crop.id}
               name={crop.name}
@@ -24,7 +39,7 @@ const FavsHomepage = () => {
               season={crop.season}
               seedPrice={crop.seedPrice}
               sellPrice={crop.sellPrice}
-              isFavorited={false}
+              isFavorited={crop.isFavorited}
             />
           </Link>
         ))}
