@@ -159,40 +159,28 @@ export default function CropFilters({ onApply, filters }) {
             </select>
           </div>
 
-          {/* Location Dropdown */}
-          <div className="mb-3 relative">
-            <label className="block font-medium text-gray-700 mb-1">
+          {/* Location Dropdown (Single Select) */}
+          <div className="mb-3">
+            <label className="block mb-1 font-medium text-gray-700">
               Location
             </label>
-            <button
-              className="w-full border border-gray-300 rounded px-3 py-1 text-left"
-              onClick={() => setDropdownOpen((prev) => !prev)}
+            <select
+              value={tempFilters.location[0] || ""}
+              onChange={(e) =>
+                setTempFilters((prev) => ({
+                  ...prev,
+                  location: e.target.value ? [e.target.value] : [],
+                }))
+              }
+              className="w-full border border-gray-300 rounded px-3 py-1 text-gray-700 bg-white"
             >
-              {tempFilters.location.length
-                ? tempFilters.location.join(", ")
-                : "Select location(s)"}
-            </button>
-
-            {dropdownOpen && (
-              <div className="absolute bg-white border border-gray-300 rounded mt-1 p-2 w-full max-h-40 overflow-y-auto z-50 shadow">
-                {locations.map((loc) => (
-                  <label
-                    key={loc.name}
-                    className="flex items-center gap-2 py-1 cursor-pointer"
-                  >
-                    <div
-                      className={`w-4 h-4 rounded-sm border border-gray-400 ${
-                        tempFilters.location.includes(loc.name)
-                          ? "bg-mm-orange"
-                          : "bg-white"
-                      }`}
-                      onClick={() => toggleLocation(loc.name)}
-                    />
-                    <span className="text-sm">{loc.name}</span>
-                  </label>
-                ))}
-              </div>
-            )}
+              <option value="">Select location</option>
+              {locations.map((loc) => (
+                <option key={loc.name} value={loc.name}>
+                  {loc.name}
+                </option>
+              ))}
+            </select>
           </div>
 
           {/* Buttons */}

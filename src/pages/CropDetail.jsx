@@ -9,7 +9,7 @@ import {
   Leaf,
   Snowflake,
 } from "lucide-react";
-import { useState} from "react";
+import { useState } from "react";
 import crops from "../assets/json/crops.json";
 import locations from "../assets/json/locations.json";
 import MiniCards from "../comps/mini/MiniCards";
@@ -43,7 +43,6 @@ export default function CropDetail({ isFavorited = false }) {
         key: s.toLowerCase(),
       }))
     : [];
-    
 
   return (
     <div className="w-full bg-[#eff6ff]">
@@ -52,10 +51,10 @@ export default function CropDetail({ isFavorited = false }) {
         <div className="flex justify-between w-full pt-2 h-[64px] pb-4">
           <button
             onClick={() => {
-              if (window.history.length > 2) {
-                navigate("/crops", { state: { fromDetailPage: true } });
+              if (window.history.state && window.history.state.idx > 0) {
+                navigate(-1);
               } else {
-                navigate("/search");
+                navigate("/");
               }
             }}
             className="bg-white rounded-full w-10 h-10 flex justify-center items-center pr-[2px] shadow hover:shadow-md hover:bg-slate-50"

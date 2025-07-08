@@ -37,7 +37,6 @@ export default function Crops() {
     setFilters(appliedFilters);
   };
 
-
   const applyFilters = (data) => {
     if (!filters) return data;
 
@@ -103,8 +102,12 @@ export default function Crops() {
 
     return filtered;
   };
-  
-  const cropsToShow = query ? filteredCrops : applyFilters(crops);
+
+  const cropsToShow = query
+    ? filteredCrops
+    : applyFilters(
+        filters ? crops : crops.sort((a, b) => a.name.localeCompare(b.name))
+      );
 
   useEffect(() => {
     if (!id) {
