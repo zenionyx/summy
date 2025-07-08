@@ -11,7 +11,7 @@ const FavsHomepage = () => {
   if (id) return <CropDetail />;
 
   // ✨ Dummy logic for now – replace with real favorites filtering
-  const favoritedCrops = crops.filter((crop) => crop.isFavorited).slice(0, 10); // Max 10 crops
+  const favoritedCrops = crops.filter((crop) => crop.isFavorited).slice(0, 10);
 
   return (
     <>

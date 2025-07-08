@@ -17,7 +17,7 @@ export default function SimpleFoodCard({
 }) {
     const isForage = seedPrice === 0;
   return (
-    <div className="relative w-full h-[230px] bg-white rounded-2xl shadow-sm border border-slate-200 p-4 py-5 flex flex-col justify-between items-center overflow-hidden hover:bg-slate-100 hover:shadow-md">
+    <div className="relative w-full h-[230px] bg-white rounded-2xl shadow-sm shadow-slate-200 border border-slate-200 p-4 py-5 flex flex-col justify-between items-center overflow-hidden hover:bg-slate-100 hover:shadow-md hover:shadow-slate-200">
       <img src={icon} alt={name} className="w-12 h-12" />
       <h3
         className={`text-center font-medium mt-2 w-full flex justify-center items-center ${

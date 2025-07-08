@@ -38,10 +38,10 @@ export default function Navbar() {
   if (!isSmall) {
     return (
       <nav className="w-full flex justify-evenly bg-blue-50 py-2">
-        <a>Logo</a>
-        <a>Crops</a>
-        <a>Fish</a>
-        <a>Recipes</a>
+        <Link to="/">Home</Link>
+        <Link to="/crops">Crops</Link>
+        <Link to="/fish">Fish</Link>
+        <Link to="/recipes">Recipes</Link>
         <a>Login</a>
       </nav>
     );
