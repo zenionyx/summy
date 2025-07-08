@@ -81,7 +81,7 @@ export default function CropDetail({ isFavorited = false }) {
         <div className="flex-x-between items-center mb-6 w-full gap-2">
           <h2
             className={`${
-              crop.name.length > 14 ? "text-2xl" : "text-3xl"
+              crop.name.length > 12 ? "text-2xl" : "text-3xl"
             } font-bold`}
           >
             {crop.name}

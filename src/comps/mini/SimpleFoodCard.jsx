@@ -21,7 +21,7 @@ export default function SimpleFoodCard({
       <img src={icon} alt={name} className="w-12 h-12" />
       <h3
         className={`text-center font-medium mt-2 w-full flex justify-center items-center ${
-          name.length > 13 ? "text-base" : "text-xl"
+          name.length > 12 ? "text-base" : "text-xl"
         } line-clamp-2`}
       >
         {name}
