@@ -99,7 +99,7 @@ export default function CropDetail({ isFavorited = false }) {
         </div>
 
         {/* Mini Nav Section */}
-        <section className="flex w-full itemDetailNav gap-4 overflow-x-auto flex-nowrap scrollbar-hide mb-6 pr-16">
+        <section className="flex w-full itemDetailNav gap-6 overflow-x-auto flex-nowrap scrollbar-hide mb-6 pr-16">
           <p
             className={activeTab === "details" ? "active" : ""}
             onClick={() => setActiveTab("details")}

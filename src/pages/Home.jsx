@@ -12,15 +12,15 @@ const Home = () => {
   };
 
   return (
-    <div className="p-[1rem] pb-36">
+    <div className="p-[1rem] pt-0 pb-36">
       {/* Top Section */}
-      <HomeNav />
-
-      {/* Search bar */}
-      <SearchBar
-        placeholder="Search crops, fish and recipes..."
-        onEnter={handleEnter}
-      />
+      <div className="sticky pt-[1rem]  top-0 z-50 bg-white pb-4">
+        <HomeNav />
+        <SearchBar
+          placeholder="Search crops, fish and recipes..."
+          onEnter={handleEnter}
+        />
+      </div>
 
       {/* Prep Lists */}
       <section></section>

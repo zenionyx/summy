@@ -17,19 +17,22 @@ export default function Search() {
   );
 
   return (
-    <div className="p-[1rem]">
-      <SearchNav
-        onQueryChange={setQuery}
-        initialValue={initialQuery}
-        onEnter={(newQuery) => {
-          setQuery(newQuery);
-          setSearchParams({ query: newQuery });
-        }}
-      />
+    <div>
+      <div className="sticky w-full p-[1rem]  top-0 z-50 bg-white pb-4">
+        <SearchNav
+          onQueryChange={setQuery}
+          initialValue={initialQuery}
+          onEnter={(newQuery) => {
+            setQuery(newQuery);
+            setSearchParams({ query: newQuery });
+          }}
+        />
+      </div>
+
       {query && filteredCrops.length === 0 ? (
         <p className="text-gray-500 text-center mt-6 text-lg">No items found</p>
       ) : (
-        <div className="grid grid-cols-2 sm:grid-cols-3 gap-4">
+        <div className="grid grid-cols-2 sm:grid-cols-3 gap-4 pt-1 p-[1rem]">
           {(query ? filteredCrops : crops).map((crop) => (
             <Link key={crop.id} to={`/crops/${crop.id}`}>
               <SimpleFoodCard

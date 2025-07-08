@@ -126,26 +126,30 @@ export default function Crops() {
   if (id) return <CropDetail />;
 
   return (
-    <div className="p-[1rem]">
-      <div className="w-full flex items-center justify-between text-gray-600 pt-2 h-[64px] pb-4">
-        <Link to="/">
-          <ChevronLeft size="28" />
-        </Link>
-        <h1 className="text-2xl font-semibold">All Crops</h1>
-        <CropFilters onApply={handleFilterApply} filters={filters} />
+    <div>
+      <div className="sticky w-full p-[1rem]  top-0 z-50 bg-white pb-4">
+        <div className="w-full flex items-center justify-between text-gray-600 pt-2 h-[64px] pb-4">
+          <Link to="/">
+            <ChevronLeft size="28" />
+          </Link>
+          <h1 className="text-2xl font-semibold">All Crops</h1>
+          <CropFilters onApply={handleFilterApply} filters={filters} />
+        </div>
+
+        <SearchBar
+          placeholder="Search crops..."
+          onChange={setQuery}
+          onEnter={(q) => setSearchParams({ query: q })}
+          initialValue={query}
+        />
       </div>
 
-      <SearchBar
-        placeholder="Search crops..."
-        onChange={setQuery}
-        onEnter={(q) => setSearchParams({ query: q })}
-        initialValue={query}
-      />
-
       {cropsToShow.length === 0 ? (
-        <p className="text-gray-500 text-center mt-6 text-lg">No items found</p>
+        <p className="text-gray-500 text-center mt-6 text-lg p-[1rem] pt-1">
+          No items found
+        </p>
       ) : (
-        <div className="grid grid-cols-2 sm:grid-cols-3 gap-4">
+        <div className="grid grid-cols-2 sm:grid-cols-3 gap-4 p-[1rem] pt-1">
           {cropsToShow.map((crop) => (
             <Link key={crop.id} to={`/crops/${crop.id}`}>
               <SimpleFoodCard
