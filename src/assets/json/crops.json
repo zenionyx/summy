@@ -194,7 +194,7 @@
   {
     "id": "chickpea",
     "name": "Chickpea",
-    "isFavorited": true,
+    "isFavourited": true,
     "image": "https://fieldsofmistria.wiki.gg/images/0/02/Chickpea.png?63a6fc",
     "season": [
       "spring"
@@ -240,7 +240,7 @@
   {
     "id": "cherry",
     "name": "Cherry",
-    "isFavorited": true,
+    "isFavourited": true,
     "image": "https://fieldsofmistria.wiki.gg/images/2/20/Cherry.png?d6e773",
     "season": ["spring"],
     "source": "General Store",
@@ -256,7 +256,7 @@
   {
     "id": "lemon",
     "name": "Lemon",
-    "isFavorited": true,
+    "isFavourited": true,
     "image": "https://fieldsofmistria.wiki.gg/images/3/35/Lemon.png?2a68b2",
     "season": ["spring"],
     "source": "General Store",

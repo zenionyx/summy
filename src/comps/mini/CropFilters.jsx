@@ -16,7 +16,6 @@ const sortOptions = [
 export default function CropFilters({ onApply, filters }) {
   const popupRef = useRef();
   const [show, setShow] = useState(false);
-  const [dropdownOpen, setDropdownOpen] = useState(false);
 
   const defaultFilters = {
     season: [],

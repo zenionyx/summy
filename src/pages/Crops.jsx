@@ -55,8 +55,8 @@ export default function Crops() {
     }
 
     // Favourites (add real logic if available)
-    if (filters.favorites) {
-      filtered = filtered.filter((crop) => crop.isFavorited);
+    if (filters.favourites) {
+      filtered = filtered.filter((crop) => crop.isFavourited === true);
     }
 
     if (filters.location.length) {
@@ -159,7 +159,7 @@ export default function Crops() {
                 season={crop.season}
                 seedPrice={crop.seedPrice}
                 sellPrice={crop.sellPrice}
-                isFavorited={false}
+                isFavourited={crop.isFavourited}
               />
             </Link>
           ))}

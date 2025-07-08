@@ -22,7 +22,7 @@ const seasonMap = {
   winter: { icon: Snowflake, color: "bg-blue-100 text-blue-700" },
 };
 
-export default function CropDetail({ isFavorited = false }) {
+export default function CropDetail({ isFavourited = false }) {
   const navigate = useNavigate();
   const { id } = useParams();
   const crop = crops.find((c) => c.id === id);
@@ -64,7 +64,7 @@ export default function CropDetail({ isFavorited = false }) {
           <div className="w-10 h-10 rounded-full bg-red-100 flex justify-center items-center shadow hover:shadow-md">
             <Heart
               className={`w-5 h-5 ${
-                isFavorited
+                isFavourited
                   ? "fill-red-400 text-red-400"
                   : "hover:text-red-400 text-white"
               }`}

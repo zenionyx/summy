@@ -11,7 +11,9 @@ const FavsHomepage = () => {
   if (id) return <CropDetail />;
 
   // ✨ Dummy logic for now – replace with real favorites filtering
-  const favoritedCrops = crops.filter((crop) => crop.isFavorited).slice(0, 10);
+  const favouritedCrops = crops
+    .filter((crop) => crop.isFavourited)
+    .slice(0, 10);
 
   return (
     <>
@@ -26,7 +28,7 @@ const FavsHomepage = () => {
 
       {/* Horizontal scroll of favorite cards */}
       <div className="flex gap-4 overflow-x-auto scrollbar-hide pb-2">
-        {favoritedCrops.map((crop) => (
+        {favouritedCrops.map((crop) => (
           <Link
             key={crop.id}
             to={`/crops/${crop.id}`}
@@ -39,7 +41,7 @@ const FavsHomepage = () => {
               season={crop.season}
               seedPrice={crop.seedPrice}
               sellPrice={crop.sellPrice}
-              isFavorited={crop.isFavorited}
+              isFavourited={crop.isFavourited}
             />
           </Link>
         ))}

@@ -41,7 +41,7 @@ export default function Search() {
                 season={crop.season}
                 seedPrice={crop.seedPrice}
                 sellPrice={crop.sellPrice}
-                isFavorited={false}
+                isFavourited={crop.isFavourited}
               />
             </Link>
           ))}

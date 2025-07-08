@@ -1,4 +1,12 @@
-import { Flower, Sun, Leaf, Snowflake, BadgeCent, Heart, TreePine } from "lucide-react";
+import {
+  Flower,
+  Sun,
+  Leaf,
+  Snowflake,
+  BadgeCent,
+  Heart,
+  TreePine,
+} from "lucide-react";
 
 const seasonMap = {
   spring: { icon: Flower, color: "bg-green-100 text-green-700" },
@@ -13,9 +21,9 @@ export default function SimpleFoodCard({
   season = [],
   seedPrice,
   sellPrice,
-  isFavorited = false,
+  isFavourited = false,
 }) {
-    const isForage = seedPrice === 0;
+  const isForage = seedPrice === 0;
   return (
     <div className="relative w-full h-[230px] bg-white rounded-2xl shadow-sm shadow-slate-200 border border-slate-200 p-4 py-5 flex flex-col justify-between items-center overflow-hidden hover:bg-slate-100 hover:shadow-md hover:shadow-slate-200">
       <img src={icon} alt={name} className="w-12 h-12" />
@@ -63,7 +71,7 @@ export default function SimpleFoodCard({
       <div className="absolute top-0 right-0 p-2 rounded-bl-xl text-gray-400 bg-red-100">
         <Heart
           className={`w-5 h-5 ${
-            isFavorited
+            isFavourited
               ? "fill-red-400 text-red-400"
               : "hover:text-red-400 text-white"
           }`}
