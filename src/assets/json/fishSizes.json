@@ -1,0 +1,18 @@
+[
+  {
+    "name": "small",
+    "imageURL": "https://fieldsofmistria.wiki.gg/images/thumb/3/30/Fishshadow_small.png/100px-Fishshadow_small.png?4dd392"
+  },
+  {
+    "name": "medium",
+    "imageURL": "https://fieldsofmistria.wiki.gg/images/thumb/2/26/Fishshadow_medium.png/100px-Fishshadow_medium.png?73ca1d"
+  },
+  {
+    "name": "large",
+    "imageURL": "https://fieldsofmistria.wiki.gg/images/thumb/4/48/Fishshadow_large.png/100px-Fishshadow_large.png?aa74be"
+  },
+  {
+    "name": "giant",
+    "imageURL": "https://fieldsofmistria.wiki.gg/images/thumb/3/32/Fishshadow_giant.png/100px-Fishshadow_giant.png?1a18c9"
+  }
+]

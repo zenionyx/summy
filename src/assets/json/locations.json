@@ -1,38 +1,58 @@
 [
   {
-    "name":"The Eastern Road",
-    "imageURL":"https://fieldsofmistria.wiki.gg/images/6/6e/The_Eastern_Road.png?e85834&20240814224253"
+    "name": "The Eastern Road",
+    "imageURL": "https://fieldsofmistria.wiki.gg/images/6/6e/The_Eastern_Road.png?e85834&20240814224253"
   },
   {
-    "name":"The Deep Woods",
-    "imageURL":"https://fieldsofmistria.wiki.gg/images/4/44/The_Deep_Woods_unlocked.png?e95032"
+    "name": "The Deep Woods",
+    "imageURL": "https://fieldsofmistria.wiki.gg/images/4/44/The_Deep_Woods_unlocked.png?e95032"
   },
   {
-    "name":"Sweetwater Farm",
-    "imageURL":"https://fieldsofmistria.wiki.gg/images/d/dc/Haydenfarm_demo.png?466378"
+    "name": "Sweetwater Farm",
+    "imageURL": "https://fieldsofmistria.wiki.gg/images/d/dc/Haydenfarm_demo.png?466378"
   },
   {
-    "name":"The Narrows",
-    "imageURL":"https://fieldsofmistria.wiki.gg/images/9/9e/The_Narrows_Map.png?2b0e50"
+    "name": "The Narrows",
+    "imageURL": "https://fieldsofmistria.wiki.gg/images/9/9e/The_Narrows_Map.png?2b0e50"
   },
   {
-    "name":"Mistria",
-    "imageURL":"https://fieldsofmistria.wiki.gg/images/7/7e/Town.png?aa5398"
+    "name": "Mistria",
+    "imageURL": "https://fieldsofmistria.wiki.gg/images/7/7e/Town.png?aa5398"
   },
   {
-    "name":"The Western Ruins",
-    "imageURL":"https://fieldsofmistria.wiki.gg/images/e/e8/Western_ruins.png?25229a"
+    "name": "The Western Ruins",
+    "imageURL": "https://fieldsofmistria.wiki.gg/images/e/e8/Western_ruins.png?25229a"
   },
   {
-    "name":"The Beach",
-    "imageURL":"https://fieldsofmistria.wiki.gg/images/b/b4/Beach_Map.png?209ccc"
+    "name": "The Beach",
+    "imageURL": "https://fieldsofmistria.wiki.gg/images/b/b4/Beach_Map.png?209ccc"
   },
   {
-    "name":"The Manor's Gardens",
-    "imageURL":"https://fieldsofmistria.wiki.gg/images/a/a0/Manor_House_on_a_Map.png?172e80"
+    "name": "The Manor's Gardens",
+    "imageURL": "https://fieldsofmistria.wiki.gg/images/a/a0/Manor_House_on_a_Map.png?172e80"
   },
   {
-    "name":"The Summit",
-    "imageURL":"https://fieldsofmistria.wiki.gg/images/d/d7/The_Summit.png?68da87"
+    "name": "The Summit",
+    "imageURL": "https://fieldsofmistria.wiki.gg/images/d/d7/The_Summit.png?68da87"
+  },
+  {
+    "name": "The Deep Earth",
+    "imageURL": "https://fieldsofmistria.wiki.gg/images/a/ae/Biome_4_default.png?c6ea08"
+  },
+  {
+    "name": "The Lava Caves",
+    "imageURL": "https://fieldsofmistria.wiki.gg/images/a/ae/Biome_4_default.png?c6ea08"
+  },
+  {
+    "name": "The Tide Caverns",
+    "imageURL": "https://fieldsofmistria.wiki.gg/images/3/33/Biome_2_default.png?7cdad0"
+  },
+  {
+    "name": "The Upper Mines",
+    "imageURL": "https://fieldsofmistria.wiki.gg/images/0/0c/Biome_1_default.png?eb632b"
+  },
+  {
+    "name": "My Farm",
+    "imageURL": "https://fieldsofmistria.wiki.gg/images/2/26/Your_farm.png?8233d4"
   }
 ]

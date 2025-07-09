@@ -31,7 +31,7 @@ const FavsHomepage = () => {
         {favouritedCrops.map((crop) => (
           <Link
             key={crop.id}
-            to={`/crops/${crop.id}`}
+            to={`/crop/${crop.id}`}
             className="flex-shrink-0 w-[156px]"
           >
             <SimpleFoodCard
