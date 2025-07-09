@@ -1,4 +1,4 @@
-import { useParams, useNavigate } from "react-router-dom";
+import { useParams, useNavigate, useLocation } from "react-router-dom";
 import {
   ChevronLeft,
   Heart,
@@ -41,6 +41,8 @@ const weatherIcons = {
 };
 
 export default function FishDetail({ isFavourited = false }) {
+  const location = useLocation();
+  const from = location.state?.from || "/search";
   const navigate = useNavigate();
   const { id } = useParams();
   const fish = fishes.find((f) => f.id === id);
@@ -64,13 +66,7 @@ export default function FishDetail({ isFavourited = false }) {
       <section className="w-full flex-x-center items-center flex-col p-[1rem] mb-6">
         <div className="flex justify-between w-full pt-2 h-[64px] pb-4">
           <button
-            onClick={() => {
-              if (window.history.state && window.history.state.idx > 0) {
-                navigate(-1);
-              } else {
-                navigate("/");
-              }
-            }}
+            onClick={() => navigate(from)}
             className="bg-white rounded-full w-10 h-10 flex justify-center items-center pr-[2px] shadow hover:shadow-md hover:bg-slate-50"
           >
             <ChevronLeft size="28" />

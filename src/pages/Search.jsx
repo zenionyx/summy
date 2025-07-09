@@ -1,5 +1,5 @@
 import { useState } from "react";
-import { useSearchParams, Link, useParams } from "react-router-dom";
+import { useSearchParams, Link, useParams, useLocation } from "react-router-dom";
 import crops from "../assets/json/crops.json";
 import fish from "../assets/json/fish.json";
 import SimpleFoodCard from "../comps/mini/SimpleFoodCard";
@@ -9,6 +9,7 @@ export default function Search() {
   const [searchParams, setSearchParams] = useSearchParams();
   const initialQuery = searchParams.get("query") || "";
   const [query, setQuery] = useState(initialQuery);
+  const location = useLocation();
 
   const combinedData = [
     ...crops.map((item) => ({ ...item, type: "crop" })),
@@ -47,6 +48,7 @@ export default function Search() {
               <Link
                 key={`${item.type}-${item.id}`}
                 to={`/${item.type}/${item.id}`}
+                state={{ from: location.pathname + location.search }}
               >
                 <SimpleFoodCard
                   name={item.name}

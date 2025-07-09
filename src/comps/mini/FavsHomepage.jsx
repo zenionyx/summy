@@ -1,11 +1,12 @@
 import SimpleFoodCard from "./SimpleFoodCard";
 import { ChevronRight } from "lucide-react";
 import crops from "../../assets/json/crops.json";
-import { useParams, Link, useNavigate } from "react-router-dom";
+import { useParams, Link, useNavigate, useLocation } from "react-router-dom";
 import CropDetail from "../../pages/CropDetail";
 
 const FavsHomepage = () => {
   const { id } = useParams();
+  const location = useLocation();
   const navigate = useNavigate();
 
   if (id) return <CropDetail />;
@@ -32,6 +33,7 @@ const FavsHomepage = () => {
           <Link
             key={crop.id}
             to={`/crop/${crop.id}`}
+            state={{ from: location.pathname + location.search }}
             className="flex-shrink-0 w-[156px]"
           >
             <SimpleFoodCard
