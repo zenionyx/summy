@@ -25,8 +25,12 @@ export default function SimpleFoodCard({
 }) {
   const isForage = seedPrice === 0;
   return (
-    <div className="relative w-full h-[200px] bg-white rounded-2xl shadow-sm shadow-slate-200 border border-slate-200 p-4 py-5 pt-7 flex flex-col justify-between items-center overflow-hidden hover:bg-slate-100 hover:shadow-md hover:shadow-slate-200">
+    <div className="relative w-full h-[210px] bg-white rounded-2xl shadow-sm shadow-slate-200 border border-slate-200 p-4 py-5 pt-7 flex flex-col justify-between items-center overflow-hidden hover:bg-slate-100 hover:shadow-md hover:shadow-slate-200">
+
+      {/* Item Image */}
       <img src={icon} alt={name} className="w-12 h-12" />
+
+      {/* Name of the Item */}
       <h3
         className={`text-center font-medium mt-2 w-full flex justify-center items-center ${
           name.length > 12 ? "text-base" : "text-xl"
@@ -35,6 +39,26 @@ export default function SimpleFoodCard({
         {name}
       </h3>
 
+      {/* Season Pills */}
+      <div className="flex gap-1 flex-wrap justify-center my-2">
+        {season.map((s, i) => {
+          const data = seasonMap[s.toLowerCase()];
+          if (!data) return null;
+
+          const { icon: Icon, color } = data;
+
+          return (
+            <div
+              key={i}
+              className={`w-6 h-6 rounded-md flex items-center justify-center ${color}`}
+            >
+              <Icon className="w-3.5 h-3.5" />
+            </div>
+          );
+        })}
+      </div>
+
+        {/* Prices */}
       <div className="text-center text-base mt-1 flex items-center gap-2 justify-center">
         {isForage ? (
           <p className="font-semibold text-green-200 flex justify-center items-center gap-1 w-6 h-6 bg-green-700 rounded-full">
@@ -50,25 +74,7 @@ export default function SimpleFoodCard({
         <p className="text-gray-500">{sellPrice}t</p>
       </div>
 
-      {/* Season Pills */}
-      {season.length > 0 &&
-        (() => {
-          const s = season[0];
-          const data = seasonMap[s.toLowerCase()];
-          if (!data) return null;
-
-          const { icon: Icon, color } = data;
-
-          return (
-            <div className={`absolute top-0 left-0 p-2 rounded-br-xl ${color}`}>
-              <div className="w-5 h-5 rounded-full flex items-center justify-center">
-                <Icon className="w-5 h-5" />
-              </div>
-            </div>
-          );
-        })()}
-
-      {/* Favoruites */}
+      {/* Favorites Icon */}
       <div className="absolute top-0 right-0 p-2 rounded-bl-xl text-gray-400 bg-red-100">
         <Heart
           className={`w-5 h-5 ${
