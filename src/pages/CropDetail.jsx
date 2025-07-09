@@ -290,30 +290,37 @@ export default function CropDetail({ isFavourited = false }) {
 
           {/* Location Section start */}
           {activeTab === "locations" && crop.forageLocation?.length > 0 ? (
-            <div className=" grid-cols-2 sm:grid-cols-2 md:grid-cols-4 gap-4 !grid">
-              {crop.forageLocation.map((loc, i) => {
-                const locationData = locations.find(
-                  (l) => l.name.toLowerCase() === loc.toLowerCase()
-                );
+            crop.forageLocation.includes("No set spawn") ? (
+              <p className="text-gray-500 text-center mt-4">
+                No set spawn for this crop! Try looking around for it!
+              </p>
+            ) : (
+              <div className="grid grid-cols-2 sm:grid-cols-2 md:grid-cols-4 gap-4">
+                {crop.forageLocation.map((loc, i) => {
+                  const locationData = locations.find(
+                    (l) => l.name.toLowerCase() === loc.toLowerCase()
+                  );
 
-                return locationData ? (
-                  <MiniCards
-                    key={i}
-                    title={locationData.name}
-                    imageURL={locationData.imageURL}
-                    onClick={() => setModalImage(locationData.imageURL)}
-                    type="food"
-                  />
-                ) : (
-                  <MiniCards
-                    key={i}
-                    title={loc}
-                    imageURL="https://via.placeholder.com/100?text=No+Image"
-                  />
-                );
-              })}
-            </div>
+                  return locationData ? (
+                    <MiniCards
+                      key={i}
+                      title={locationData.name}
+                      imageURL={locationData.imageURL}
+                      onClick={() => setModalImage(locationData.imageURL)}
+                      type="food"
+                    />
+                  ) : (
+                    <MiniCards
+                      key={i}
+                      title={loc}
+                      imageURL="https://via.placeholder.com/100?text=No+Image"
+                    />
+                  );
+                })}
+              </div>
+            )
           ) : null}
+
           {/* Location Section End */}
 
           {activeTab === "recipes" ? (

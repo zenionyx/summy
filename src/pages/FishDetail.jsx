@@ -11,6 +11,7 @@ import {
 } from "lucide-react";
 import { useState } from "react";
 import fishes from "../assets/json/fish.json";
+import fishSizes from "../assets/json/fishSizes.json";
 import locations from "../assets/json/locations.json";
 import MiniCards from "../comps/mini/MiniCards";
 import ImageModal from "../comps/mini/ImageModal";
@@ -166,7 +167,17 @@ export default function FishDetail({ isFavourited = false }) {
 
               <div>
                 <h3>Size</h3>
-                <p>{fish.size.charAt(0).toUpperCase() + fish.size.slice(1)}</p>
+                <button
+                  onClick={() => {
+                    const sizeData = fishSizes.find(
+                      (s) => s.name.toLowerCase() === fish.size.toLowerCase()
+                    );
+                    if (sizeData) setModalImage(sizeData.imageURL);
+                  }}
+                  className="inline-flex items-center gap-2 px-4 py-[0.5px] rounded-md bg-slate-100 border border-slate-200 shadow shadow-slate-100 hover:bg-slate-200 transition"
+                >
+                  {fish.size.charAt(0).toUpperCase() + fish.size.slice(1)}
+                </button>
               </div>
 
               <div>

@@ -151,7 +151,7 @@ export default function Crops() {
       ) : (
         <div className="grid grid-cols-2 sm:grid-cols-3 gap-4 p-[1rem] pt-1 pb-24">
           {cropsToShow.map((crop) => (
-            <Link key={crop.id} to={`/crops/${crop.id}`}>
+            <Link key={crop.id} to={`/crop/${crop.id}`}>
               <SimpleFoodCard
                 id={crop.id}
                 name={crop.name}
