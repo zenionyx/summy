@@ -1886,7 +1886,7 @@
     "sellPrice": 5,
     "donateable": false,
     "museumSet": "None",
-    "forageLocation": [],
+    "forageLocation": ["The Narrows", "The Western Ruins", "The Deep Woods"],
     "type": [
       "foragable"
     ]

@@ -295,28 +295,30 @@ export default function CropDetail({ isFavourited = false }) {
                 No set spawn for this crop! Try looking around for it!
               </p>
             ) : (
-              <div className="grid grid-cols-2 sm:grid-cols-2 md:grid-cols-4 gap-4">
-                {crop.forageLocation.map((loc, i) => {
-                  const locationData = locations.find(
-                    (l) => l.name.toLowerCase() === loc.toLowerCase()
-                  );
+              <div className="w-full">
+                <div className="grid grid-cols-2 md:grid-cols-4 gap-4">
+                  {crop.forageLocation.map((loc, i) => {
+                    const locationData = locations.find(
+                      (l) => l.name.toLowerCase() === loc.toLowerCase()
+                    );
 
-                  return locationData ? (
-                    <MiniCards
-                      key={i}
-                      title={locationData.name}
-                      imageURL={locationData.imageURL}
-                      onClick={() => setModalImage(locationData.imageURL)}
-                      type="food"
-                    />
-                  ) : (
-                    <MiniCards
-                      key={i}
-                      title={loc}
-                      imageURL="https://via.placeholder.com/100?text=No+Image"
-                    />
-                  );
-                })}
+                    return locationData ? (
+                      <MiniCards
+                        key={i}
+                        title={locationData.name}
+                        imageURL={locationData.imageURL}
+                        onClick={() => setModalImage(locationData.imageURL)}
+                        type="food"
+                      />
+                    ) : (
+                      <MiniCards
+                        key={i}
+                        title={loc}
+                        imageURL="https://via.placeholder.com/100?text=No+Image"
+                      />
+                    );
+                  })}
+                </div>
               </div>
             )
           ) : null}

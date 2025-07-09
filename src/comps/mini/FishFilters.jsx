@@ -12,7 +12,7 @@ const sortOptions = [
   { value: "seedHighLow", label: "High to Low Seed Price" },
 ];
 
-const cropLocations = [
+const fishLocations = [
   "Mistria",
   "Sweetwater Farm",
   "The Eastern Road",

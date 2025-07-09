@@ -67,6 +67,15 @@ export default function Crops() {
       );
     }
 
+    // Source Type (forageable / buyable / all)
+    if (filters.sourceType && filters.sourceType !== "all") {
+      if (filters.sourceType === "forageable") {
+        filtered = filtered.filter((crop) => crop.seedPrice === 0);
+      } else if (filters.sourceType === "buyable") {
+        filtered = filtered.filter((crop) => crop.seedPrice > 0);
+      }
+    }
+
     // Sort
     switch (filters.sortBy) {
       case "az":
@@ -151,7 +160,11 @@ export default function Crops() {
       ) : (
         <div className="grid grid-cols-2 sm:grid-cols-3 gap-4 p-[1rem] pt-1 pb-24">
           {cropsToShow.map((crop) => (
-            <Link key={crop.id} to={`/crop/${crop.id}`}>
+            <Link
+              key={crop.id}
+              to={`/crop/${crop.id}`}
+              state={{ from: location.pathname + location.search }}
+            >
               <SimpleFoodCard
                 id={crop.id}
                 name={crop.name}
