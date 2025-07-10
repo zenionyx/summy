@@ -281,7 +281,6 @@ export default function FishDetail({ isFavourited = false }) {
           {/* Collect Section start */}
 
           {/* Location Section start */}
-          {/* FIX */}
           {activeTab === "locations" ? (
             <div className="w-full">
               <div className="grid grid-cols-2 gap-4">

@@ -10,6 +10,9 @@ import fish from "../assets/json/fish.json";
 import recipes from "../assets/json/recipes.json";
 import SimpleFoodCard from "../comps/mini/SimpleFoodCard";
 import SearchNav from "../comps/mini/SearchNav";
+import CropDetail from "./CropDetail";
+import FishDetail from "./FishDetail";
+import RecipeDetail from "./RecipeDetail";
 
 export default function Search() {
   const [searchParams, setSearchParams] = useSearchParams();

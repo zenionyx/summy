@@ -5,7 +5,10 @@ import {
 } from "lucide-react";
 import { useState } from "react";
 import recipes from "../assets/json/recipes.json";
-// import MiniCards from "../comps/mini/MiniCards";
+import crops from "../assets/json/crops.json";
+import fishes from "../assets/json/fish.json";
+import ingredients from "../assets/json/ingredients.json"
+
 import ImageModal from "../comps/mini/ImageModal";
 
 const kitchenTierMap = {
@@ -149,6 +152,85 @@ export default function RecipeDetail({ isFavourited = false }) {
             </>
           ) : null}
           {/* Details Section end */}
+
+          {/* Ingredients Section */}
+          {activeTab === "indgredients" ? (
+            <div>
+              <div className="grid grid-cols-2 gap-4 w-full">
+                {recipe.ingredients.map((ingredientName, index) => {
+                  const quantity = recipe.howMany?.[index] || 1;
+
+                  const cropMatch = crops.find(
+                    (c) => c.name === ingredientName
+                  );
+                  const fishMatch = fishes.find(
+                    (f) => f.name === ingredientName
+                  );
+                  const ingredientMatch = ingredients.find(
+                    (i) => i.name === ingredientName
+                  );
+
+                  const matchedItem = cropMatch
+                    ? { ...cropMatch, type: "crop" }
+                    : fishMatch
+                    ? { ...fishMatch, type: "fish" }
+                    : ingredientMatch
+                    ? { ...ingredientMatch, type: "ingredient" }
+                    : null;
+
+                  const isUnlinkable = matchedItem?.type === "ingredient";
+
+                  const cardClasses = `relative w-full rounded-xl p-2 py-4 flex flex-col gap-2 items-center transition ${
+                    isUnlinkable
+                      ? "bg-gray-100 border border-gray-300 text-gray-600 cursor-default scale-[.97] brightness-95"
+                      : "bg-white shadow border hover:shadow-md"
+                  }`;
+
+                  const cardContent = (
+                    <div className={cardClasses}>
+                      {/* Quantity badge */}
+                      <div className="absolute -top-2 -right-2 w-6 h-6 bg-mm-pink text-white text-xs font-bold rounded-full flex items-center justify-center shadow ">
+                        {quantity}
+                      </div>
+
+                      {/* Ingredient Image */}
+                      <img
+                        src={
+                          matchedItem?.image || "https://via.placeholder.com/40"
+                        }
+                        alt={ingredientName}
+                        className="w-10 h-10 object-contain"
+                      />
+
+                      {/* Name */}
+                      <p className="text-center text-sm font-medium">
+                        {ingredientName}
+                      </p>
+                    </div>
+                  );
+
+                  return (
+                    <div key={index} className="w-full">
+                      {matchedItem && matchedItem.type !== "ingredient" ? (
+                        <button
+                          onClick={() =>
+                            navigate(`/${matchedItem.type}/${matchedItem.id}`, {
+                              state: { from: location.pathname },
+                            })
+                          }
+                          className="w-full"
+                        >
+                          {cardContent}
+                        </button>
+                      ) : (
+                        cardContent
+                      )}
+                    </div>
+                  );
+                })}
+              </div>
+            </div>
+          ) : null}
 
           {/* Calculator Section start */}
           {activeTab === "calculator" ? (

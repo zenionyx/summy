@@ -8,6 +8,7 @@ import {
   Sun,
   Leaf,
   Snowflake,
+  RefreshCw,
 } from "lucide-react";
 import { useState } from "react";
 import crops from "../assets/json/crops.json";
@@ -16,6 +17,7 @@ import MiniCards from "../comps/mini/MiniCards";
 import ImageModal from "../comps/mini/ImageModal";
 
 const seasonMap = {
+  all: { icon: RefreshCw, color: "bg-purple-100 text-purple-600" },
   spring: { icon: Flower, color: "bg-green-100 text-green-700" },
   summer: { icon: Sun, color: "bg-yellow-100 text-yellow-700" },
   fall: { icon: Leaf, color: "bg-orange-100 text-orange-700" },

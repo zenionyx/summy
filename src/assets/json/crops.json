@@ -3,9 +3,7 @@
     "id": "turnip",
     "name": "Turnip",
     "image": "https://fieldsofmistria.wiki.gg/images/b/b7/Turnip.png?e82d93",
-    "season": [
-      "spring"
-    ],
+    "season": ["spring"],
     "source": "General Store",
     "growthTime": 4,
     "regrowthTime": 0,
@@ -13,20 +11,14 @@
     "sellPrice": 40,
     "donateable": true,
     "museumSet": "Spring Crop",
-    "forageLocation": [
-      "None"
-    ],
-    "type": [
-      "single"
-    ]
+    "forageLocation": ["None"],
+    "type": ["single"]
   },
   {
     "id": "potato",
     "name": "Potato",
     "image": "https://fieldsofmistria.wiki.gg/images/c/c2/Potato.png?e58bd2",
-    "season": [
-      "spring"
-    ],
+    "season": ["spring"],
     "source": "General Store",
     "growthTime": 6,
     "regrowthTime": 0,
@@ -34,20 +26,14 @@
     "sellPrice": 75,
     "donateable": true,
     "museumSet": "Spring Crop",
-    "forageLocation": [
-      "None"
-    ],
-    "type": [
-      "single"
-    ]
+    "forageLocation": ["None"],
+    "type": ["single"]
   },
   {
     "id": "carrot",
     "name": "Carrot",
     "image": "https://fieldsofmistria.wiki.gg/images/c/c3/Carrot.png?63a338",
-    "season": [
-      "spring"
-    ],
+    "season": ["spring"],
     "source": "General Store",
     "growthTime": 6,
     "regrowthTime": 0,
@@ -55,20 +41,14 @@
     "sellPrice": 80,
     "donateable": false,
     "museumSet": "None",
-    "forageLocation": [
-      "None"
-    ],
-    "type": [
-      "single"
-    ]
+    "forageLocation": ["None"],
+    "type": ["single"]
   },
   {
     "id": "cabbage",
     "name": "Cabbage",
     "image": "https://fieldsofmistria.wiki.gg/images/c/cc/Cabbage.png?e2dbdf",
-    "season": [
-      "spring"
-    ],
+    "season": ["spring"],
     "source": "General Store",
     "growthTime": 9,
     "regrowthTime": 0,
@@ -76,20 +56,14 @@
     "sellPrice": 180,
     "donateable": true,
     "museumSet": "Spring Crop",
-    "forageLocation": [
-      "None"
-    ],
-    "type": [
-      "single"
-    ]
+    "forageLocation": ["None"],
+    "type": ["single"]
   },
   {
     "id": "daffodil",
     "name": "Daffodil",
     "image": "https://fieldsofmistria.wiki.gg/images/4/4b/Daffodil.png?b4d6bb",
-    "season": [
-      "spring"
-    ],
+    "season": ["spring"],
     "source": "General Store",
     "growthTime": 4,
     "regrowthTime": 0,
@@ -97,21 +71,14 @@
     "sellPrice": 25,
     "donateable": true,
     "museumSet": "Spring Flower",
-    "forageLocation": [
-      "Sweetwater Farm",
-      "The Narrows"
-    ],
-    "type": [
-      "single"
-    ]
+    "forageLocation": ["Sweetwater Farm", "The Narrows"],
+    "type": ["single"]
   },
   {
     "id": "tulip",
     "name": "Tulip",
     "image": "https://fieldsofmistria.wiki.gg/images/c/cf/Tulip.png?134974",
-    "season": [
-      "spring"
-    ],
+    "season": ["spring"],
     "source": "General Store",
     "growthTime": 6,
     "regrowthTime": 0,
@@ -119,20 +86,14 @@
     "sellPrice": 30,
     "donateable": true,
     "museumSet": "Spring Flower",
-    "forageLocation": [
-      "None"
-    ],
-    "type": [
-      "single"
-    ]
+    "forageLocation": ["None"],
+    "type": ["single"]
   },
   {
     "id": "snowdrop-anemone",
     "name": "Snowdrop Anemone",
     "image": "https://fieldsofmistria.wiki.gg/images/d/d4/Snowdrop_anemone.png?59b990",
-    "season": [
-      "spring"
-    ],
+    "season": ["spring"],
     "source": "Foraging",
     "growthTime": 6,
     "regrowthTime": 0,
@@ -140,22 +101,14 @@
     "sellPrice": 40,
     "donateable": true,
     "museumSet": "Spring Flower",
-    "forageLocation": [
-      "The Western Ruins",
-      "The Beach"
-    ],
-    "type": [
-      "single",
-      "foragable"
-    ]
+    "forageLocation": ["The Western Ruins", "The Beach"],
+    "type": ["single", "foragable"]
   },
   {
     "id": "strawberry",
     "name": "Strawberry",
     "image": "https://fieldsofmistria.wiki.gg/images/6/6d/Strawberry.png?936558",
-    "season": [
-      "spring"
-    ],
+    "season": ["spring"],
     "source": "General Store",
     "growthTime": 5,
     "regrowthTime": 3,
@@ -163,20 +116,14 @@
     "sellPrice": 125,
     "donateable": true,
     "museumSet": "Spring Crop",
-    "forageLocation": [
-      "None"
-    ],
-    "type": [
-      "multi"
-    ]
+    "forageLocation": ["None"],
+    "type": ["multi"]
   },
   {
     "id": "peas",
     "name": "Peas",
     "image": "https://fieldsofmistria.wiki.gg/images/e/e8/Peas.png?ae8607",
-    "season": [
-      "spring"
-    ],
+    "season": ["spring"],
     "source": "General Store",
     "growthTime": 5,
     "regrowthTime": 3,
@@ -184,21 +131,15 @@
     "sellPrice": 135,
     "donateable": false,
     "museumSet": "None",
-    "forageLocation": [
-      "None"
-    ],
-    "type": [
-      "multi"
-    ]
+    "forageLocation": ["None"],
+    "type": ["multi"]
   },
   {
     "id": "chickpea",
     "name": "Chickpea",
     "isFavourited": true,
     "image": "https://fieldsofmistria.wiki.gg/images/0/02/Chickpea.png?63a6fc",
-    "season": [
-      "spring"
-    ],
+    "season": ["spring"],
     "source": "Foraging",
     "growthTime": 5,
     "regrowthTime": 3,
@@ -206,22 +147,14 @@
     "sellPrice": 30,
     "donateable": false,
     "museumSet": "None",
-    "forageLocation": [
-      "Sweetwater Farm",
-      "The Narrows",
-      "The Eastern Road"
-    ],
-    "type": [
-      "multi"
-    ]
+    "forageLocation": ["Sweetwater Farm", "The Narrows", "The Eastern Road"],
+    "type": ["multi"]
   },
   {
     "id": "lilac",
     "name": "Lilac",
     "image": "https://fieldsofmistria.wiki.gg/images/5/5f/Lilac.png?ec8693",
-    "season": [
-      "spring"
-    ],
+    "season": ["spring"],
     "source": "Foraging",
     "growthTime": 9,
     "regrowthTime": 3,
@@ -229,13 +162,8 @@
     "sellPrice": 35,
     "donateable": true,
     "museumSet": "Spring Flower",
-    "forageLocation": [
-      "None"
-    ],
-    "type": [
-      "multi",
-      "foragable"
-    ]
+    "forageLocation": ["None"],
+    "type": ["multi", "foragable"]
   },
   {
     "id": "cherry",
@@ -273,9 +201,7 @@
     "id": "blueberry",
     "name": "Blueberry",
     "image": "https://fieldsofmistria.wiki.gg/images/9/9e/Blueberry.png?7fb25c",
-    "season": [
-      "spring"
-    ],
+    "season": ["spring"],
     "source": "Foraging",
     "growthTime": 0,
     "regrowthTime": 0,
@@ -283,23 +209,14 @@
     "sellPrice": 5,
     "donateable": false,
     "museumSet": "None",
-    "forageLocation": [
-      "The Eastern Road",
-      "The Deep Woods"
-    ],
-    "type": [
-      "foragable"
-    ]
+    "forageLocation": ["The Eastern Road", "The Deep Woods"],
+    "type": ["foragable"]
   },
   {
     "id": "cattail-fluff",
     "name": "Cattail Fluff",
     "image": "https://fieldsofmistria.wiki.gg/images/3/3d/Cattail_fluff.png?c8cbe8",
-    "season": [
-      "spring",
-      "summer",
-      "fall"
-    ],
+    "season": ["spring", "summer", "fall"],
     "source": "Foraging",
     "growthTime": 0,
     "regrowthTime": 0,
@@ -307,20 +224,14 @@
     "sellPrice": 5,
     "donateable": false,
     "museumSet": "None",
-    "forageLocation": [
-      "The Eastern Road"
-    ],
-    "type": [
-      "foragable"
-    ]
+    "forageLocation": ["The Eastern Road"],
+    "type": ["foragable"]
   },
   {
     "id": "dandelion",
     "name": "Dandelion",
     "image": "https://fieldsofmistria.wiki.gg/images/b/b1/Dandelion.png?3ae3df",
-    "season": [
-      "spring"
-    ],
+    "season": ["spring"],
     "source": "Foraging",
     "growthTime": 0,
     "regrowthTime": 0,
@@ -328,22 +239,14 @@
     "sellPrice": 10,
     "donateable": true,
     "museumSet": "Spring Forage",
-    "forageLocation": [
-      "Mistria",
-      "The Narrows",
-      "Sweetwater Farm"
-    ],
-    "type": [
-      "foragable"
-    ]
+    "forageLocation": ["Mistria", "The Narrows", "Sweetwater Farm"],
+    "type": ["foragable"]
   },
   {
     "id": "fennel",
     "name": "Fennel",
     "image": "https://fieldsofmistria.wiki.gg/images/f/f7/Fennel.png?15d44c",
-    "season": [
-      "spring"
-    ],
+    "season": ["spring"],
     "source": "Foraging",
     "growthTime": 0,
     "regrowthTime": 0,
@@ -351,21 +254,14 @@
     "sellPrice": 20,
     "donateable": true,
     "museumSet": "Spring Forage",
-    "forageLocation": [
-      "The Narrows",
-      "The Eastern Road"
-    ],
-    "type": [
-      "foragable"
-    ]
+    "forageLocation": ["The Narrows", "The Eastern Road"],
+    "type": ["foragable"]
   },
   {
     "id": "fiddlehead",
     "name": "Fiddlehead",
     "image": "https://fieldsofmistria.wiki.gg/images/7/75/Fiddlehead.png?593e0f",
-    "season": [
-      "spring"
-    ],
+    "season": ["spring"],
     "source": "Foraging",
     "growthTime": 0,
     "regrowthTime": 0,
@@ -373,21 +269,14 @@
     "sellPrice": 25,
     "donateable": true,
     "museumSet": "Spring Forage",
-    "forageLocation": [
-      "The Narrows",
-      "Sweetwater Farm"
-    ],
-    "type": [
-      "foragable"
-    ]
+    "forageLocation": ["The Narrows", "Sweetwater Farm"],
+    "type": ["foragable"]
   },
   {
     "id": "middlemist",
     "name": "Middlemist",
     "image": "https://fieldsofmistria.wiki.gg/images/2/2e/Middlemist.png?d196f4",
-    "season": [
-      "spring"
-    ],
+    "season": ["spring"],
     "source": "Foraging",
     "growthTime": 0,
     "regrowthTime": 0,
@@ -395,20 +284,14 @@
     "sellPrice": 100,
     "donateable": false,
     "museumSet": "None",
-    "forageLocation": [
-      "No set spawn"
-    ],
-    "type": [
-      "foragable"
-    ]
+    "forageLocation": ["No set spawn"],
+    "type": ["foragable"]
   },
   {
     "id": "morel-mushroom",
     "name": "Morel Mushroom",
     "image": "https://fieldsofmistria.wiki.gg/images/4/4a/Morel_mushroom.png?9b20c9",
-    "season": [
-      "spring"
-    ],
+    "season": ["spring"],
     "source": "Foraging",
     "growthTime": 0,
     "regrowthTime": 0,
@@ -416,20 +299,14 @@
     "sellPrice": 25,
     "donateable": true,
     "museumSet": "Spring Forage",
-    "forageLocation": [
-      "No set spawn"
-    ],
-    "type": [
-      "foragable"
-    ]
+    "forageLocation": ["No set spawn"],
+    "type": ["foragable"]
   },
   {
     "id": "nettle",
     "name": "Nettle",
     "image": "https://fieldsofmistria.wiki.gg/images/4/40/Nettle.png?36b1cf",
-    "season": [
-      "spring"
-    ],
+    "season": ["spring"],
     "source": "Foraging",
     "growthTime": 0,
     "regrowthTime": 0,
@@ -437,22 +314,14 @@
     "sellPrice": 25,
     "donateable": true,
     "museumSet": "Spring Forage",
-    "forageLocation": [
-      "Sweetwater Farm"
-    ],
-    "type": [
-      "foragable"
-    ]
+    "forageLocation": ["Sweetwater Farm"],
+    "type": ["foragable"]
   },
   {
     "id": "water-chestnut",
     "name": "Water Chestnut",
     "image": "https://fieldsofmistria.wiki.gg/images/3/3b/Water_chestnut.png?701a08",
-    "season": [
-      "spring",
-      "summer",
-      "fall"
-    ],
+    "season": ["spring", "summer", "fall"],
     "source": "Foraging",
     "growthTime": 0,
     "regrowthTime": 0,
@@ -460,20 +329,14 @@
     "sellPrice": 5,
     "donateable": false,
     "museumSet": "None",
-    "forageLocation": [
-      "The Narrows"
-    ],
-    "type": [
-      "foragable"
-    ]
+    "forageLocation": ["The Narrows"],
+    "type": ["foragable"]
   },
   {
     "id": "wild-berries",
     "name": "Wild Berries",
     "image": "https://fieldsofmistria.wiki.gg/images/d/d0/Wild_berries.png?74509d",
-    "season": [
-      "spring"
-    ],
+    "season": ["spring"],
     "source": "Foraging",
     "growthTime": 0,
     "regrowthTime": 0,
@@ -489,17 +352,13 @@
       "The Eastern Road",
       "The Deep Woods"
     ],
-    "type": [
-      "foragable"
-    ]
+    "type": ["foragable"]
   },
   {
     "id": "wild-leek",
     "name": "Wild Leek",
     "image": "https://fieldsofmistria.wiki.gg/images/d/dd/Wild_leek.png?25b8df",
-    "season": [
-      "spring"
-    ],
+    "season": ["spring"],
     "source": "Foraging",
     "growthTime": 0,
     "regrowthTime": 0,
@@ -507,22 +366,14 @@
     "sellPrice": 15,
     "donateable": true,
     "museumSet": "Spring Forage",
-    "forageLocation": [
-      "Mistria",
-      "The Narrows",
-      "The Eastern Road"
-    ],
-    "type": [
-      "foragable"
-    ]
+    "forageLocation": ["Mistria", "The Narrows", "The Eastern Road"],
+    "type": ["foragable"]
   },
   {
     "id": "cucumber",
     "name": "Cucumber",
     "image": "https://fieldsofmistria.wiki.gg/images/5/59/Cucumber.png?ac8b1c",
-    "season": [
-      "summer"
-    ],
+    "season": ["summer"],
     "source": "General Store",
     "growthTime": 4,
     "regrowthTime": 0,
@@ -530,20 +381,14 @@
     "sellPrice": 40,
     "donateable": true,
     "museumSet": "Summer Crop",
-    "forageLocation": [
-      "None"
-    ],
-    "type": [
-      "single"
-    ]
+    "forageLocation": ["None"],
+    "type": ["single"]
   },
   {
     "id": "chili-pepper",
     "name": "Chili Pepper",
     "image": "https://fieldsofmistria.wiki.gg/images/6/60/Chili_pepper.png?ebfc25",
-    "season": [
-      "summer"
-    ],
+    "season": ["summer"],
     "source": "General Store",
     "growthTime": 6,
     "regrowthTime": 0,
@@ -551,20 +396,14 @@
     "sellPrice": 75,
     "donateable": true,
     "museumSet": "Summer Crop",
-    "forageLocation": [
-      "None"
-    ],
-    "type": [
-      "single"
-    ]
+    "forageLocation": ["None"],
+    "type": ["single"]
   },
   {
     "id": "sugar-cane",
     "name": "Sugar Cane",
     "image": "https://fieldsofmistria.wiki.gg/images/e/e8/Sugar_cane.png?6166d2",
-    "season": [
-      "summer"
-    ],
+    "season": ["summer"],
     "source": "General Store",
     "growthTime": 6,
     "regrowthTime": 0,
@@ -572,20 +411,14 @@
     "sellPrice": 80,
     "donateable": false,
     "museumSet": "None",
-    "forageLocation": [
-      "None"
-    ],
-    "type": [
-      "single"
-    ]
+    "forageLocation": ["None"],
+    "type": ["single"]
   },
   {
     "id": "sunflower",
     "name": "Sunflower",
     "image": "https://fieldsofmistria.wiki.gg/images/8/81/Sunflower.png?533e2d",
-    "season": [
-      "summer"
-    ],
+    "season": ["summer"],
     "source": "General Store",
     "growthTime": 6,
     "regrowthTime": 0,
@@ -593,20 +426,14 @@
     "sellPrice": 30,
     "donateable": false,
     "museumSet": "None",
-    "forageLocation": [
-      "None"
-    ],
-    "type": [
-      "single"
-    ]
+    "forageLocation": ["None"],
+    "type": ["single"]
   },
   {
     "id": "watermelon",
     "name": "Watermelon",
     "image": "https://fieldsofmistria.wiki.gg/images/0/06/Watermelon.png?467527",
-    "season": [
-      "summer"
-    ],
+    "season": ["summer"],
     "source": "General Store",
     "growthTime": 9,
     "regrowthTime": 0,
@@ -614,20 +441,14 @@
     "sellPrice": 180,
     "donateable": true,
     "museumSet": "Summer Crop",
-    "forageLocation": [
-      "None"
-    ],
-    "type": [
-      "single"
-    ]
+    "forageLocation": ["None"],
+    "type": ["single"]
   },
   {
     "id": "daisy",
     "name": "Daisy",
     "image": "https://fieldsofmistria.wiki.gg/images/c/c1/Daisy.png?d28c8a",
-    "season": [
-      "summer"
-    ],
+    "season": ["summer"],
     "source": "General Store",
     "growthTime": 4,
     "regrowthTime": 0,
@@ -641,17 +462,13 @@
       "The Western Ruins",
       "The Eastern Road"
     ],
-    "type": [
-      "single"
-    ]
+    "type": ["single"]
   },
   {
     "id": "catmint",
     "name": "Catmint",
     "image": "https://fieldsofmistria.wiki.gg/images/2/2c/Catmint.png?53d4c7",
-    "season": [
-      "summer"
-    ],
+    "season": ["summer"],
     "source": "General Store",
     "growthTime": 6,
     "regrowthTime": 0,
@@ -659,20 +476,14 @@
     "sellPrice": 30,
     "donateable": true,
     "museumSet": "Summer Flower",
-    "forageLocation": [
-      "The Narrows"
-    ],
-    "type": [
-      "single"
-    ]
+    "forageLocation": ["The Narrows"],
+    "type": ["single"]
   },
   {
     "id": "cosmos",
     "name": "Cosmos",
     "image": "https://fieldsofmistria.wiki.gg/images/6/64/Cosmos.png?7ba0dd",
-    "season": [
-      "summer"
-    ],
+    "season": ["summer"],
     "source": "General Store",
     "growthTime": 6,
     "regrowthTime": 0,
@@ -680,20 +491,14 @@
     "sellPrice": 30,
     "donateable": true,
     "museumSet": "Summer Flower",
-    "forageLocation": [
-      "Sweetwater Farm"
-    ],
-    "type": [
-      "single"
-    ]
+    "forageLocation": ["Sweetwater Farm"],
+    "type": ["single"]
   },
   {
     "id": "iris",
     "name": "Iris",
     "image": "https://fieldsofmistria.wiki.gg/images/5/5c/Iris.png?561ee9",
-    "season": [
-      "summer"
-    ],
+    "season": ["summer"],
     "source": "General Store",
     "growthTime": 6,
     "regrowthTime": 0,
@@ -701,23 +506,14 @@
     "sellPrice": 30,
     "donateable": true,
     "museumSet": "Summer Flower",
-    "forageLocation": [
-      "The Beach",
-      "The Narrows",
-      "Sweetwater Farm"
-    ],
-    "type": [
-      "single",
-      "foragable"
-    ]
+    "forageLocation": ["The Beach", "The Narrows", "Sweetwater Farm"],
+    "type": ["single", "foragable"]
   },
   {
     "id": "marigold",
     "name": "Marigold",
     "image": "https://fieldsofmistria.wiki.gg/images/3/3c/Marigold.png?f49872",
-    "season": [
-      "summer"
-    ],
+    "season": ["summer"],
     "source": "General Store",
     "growthTime": 9,
     "regrowthTime": 0,
@@ -725,21 +521,14 @@
     "sellPrice": 40,
     "donateable": true,
     "museumSet": "Summer Flower",
-    "forageLocation": [
-      "The Western Ruins"
-    ],
-    "type": [
-      "single",
-      "foragable"
-    ]
+    "forageLocation": ["The Western Ruins"],
+    "type": ["single", "foragable"]
   },
   {
     "id": "night-queen",
     "name": "Night Queen",
     "image": "https://fieldsofmistria.wiki.gg/images/2/2d/Night_queen.png?616cd3",
-    "season": [
-      "summer"
-    ],
+    "season": ["summer"],
     "source": "General Store",
     "growthTime": 6,
     "regrowthTime": 0,
@@ -747,21 +536,14 @@
     "sellPrice": 40,
     "donateable": false,
     "museumSet": "None",
-    "forageLocation": [
-      "No set spawn"
-    ],
-    "type": [
-      "single",
-      "foragable"
-    ]
+    "forageLocation": ["No set spawn"],
+    "type": ["single", "foragable"]
   },
   {
     "id": "corn",
     "name": "Corn",
     "image": "https://fieldsofmistria.wiki.gg/images/f/f8/Corn.png?a10db5",
-    "season": [
-      "summer"
-    ],
+    "season": ["summer"],
     "source": "General Store",
     "growthTime": 5,
     "regrowthTime": 3,
@@ -769,20 +551,14 @@
     "sellPrice": 125,
     "donateable": true,
     "museumSet": "Summer Crop",
-    "forageLocation": [
-      "None"
-    ],
-    "type": [
-      "multi"
-    ]
+    "forageLocation": ["None"],
+    "type": ["multi"]
   },
   {
     "id": "tomato",
     "name": "Tomato",
     "image": "https://fieldsofmistria.wiki.gg/images/9/9d/Tomato.png?a3f9b3",
-    "season": [
-      "summer"
-    ],
+    "season": ["summer"],
     "source": "General Store",
     "growthTime": 5,
     "regrowthTime": 3,
@@ -790,20 +566,14 @@
     "sellPrice": 125,
     "donateable": true,
     "museumSet": "Summer Crop",
-    "forageLocation": [
-      "None"
-    ],
-    "type": [
-      "multi"
-    ]
+    "forageLocation": ["None"],
+    "type": ["multi"]
   },
   {
     "id": "tea",
     "name": "Tea",
     "image": "https://fieldsofmistria.wiki.gg/images/5/59/Tea.png?892509",
-    "season": [
-      "summer"
-    ],
+    "season": ["summer"],
     "source": "General Store",
     "growthTime": 5,
     "regrowthTime": 3,
@@ -811,20 +581,14 @@
     "sellPrice": 135,
     "donateable": false,
     "museumSet": "None",
-    "forageLocation": [
-      "None"
-    ],
-    "type": [
-      "multi"
-    ]
+    "forageLocation": ["None"],
+    "type": ["multi"]
   },
   {
     "id": "basil",
     "name": "Basil",
     "image": "https://fieldsofmistria.wiki.gg/images/6/6e/Basil.png?674fff",
-    "season": [
-      "summer"
-    ],
+    "season": ["summer"],
     "source": "Foraging",
     "growthTime": 5,
     "regrowthTime": 3,
@@ -832,21 +596,14 @@
     "sellPrice": 30,
     "donateable": true,
     "museumSet": "Summer Forage",
-    "forageLocation": [
-      "The Eastern Road"
-    ],
-    "type": [
-      "multi",
-      "foragable"
-    ]
+    "forageLocation": ["The Eastern Road"],
+    "type": ["multi", "foragable"]
   },
   {
     "id": "dill",
     "name": "Dill",
     "image": "https://fieldsofmistria.wiki.gg/images/4/48/Dill.png?e3933e",
-    "season": [
-      "summer"
-    ],
+    "season": ["summer"],
     "source": "Foraging",
     "growthTime": 5,
     "regrowthTime": 3,
@@ -854,23 +611,14 @@
     "sellPrice": 30,
     "donateable": true,
     "museumSet": "Summer Forage",
-    "forageLocation": [
-      "The Narrows",
-      "The Beach",
-      "The Western Ruins"
-    ],
-    "type": [
-      "multi",
-      "foragable"
-    ]
+    "forageLocation": ["The Narrows", "The Beach", "The Western Ruins"],
+    "type": ["multi", "foragable"]
   },
   {
     "id": "oregano",
     "name": "Oregano",
     "image": "https://fieldsofmistria.wiki.gg/images/e/e3/Oregano.png?d0936d",
-    "season": [
-      "summer"
-    ],
+    "season": ["summer"],
     "source": "Foraging",
     "growthTime": 5,
     "regrowthTime": 3,
@@ -878,21 +626,14 @@
     "sellPrice": 30,
     "donateable": true,
     "museumSet": "Summer Forage",
-    "forageLocation": [
-      "Mistria"
-    ],
-    "type": [
-      "multi",
-      "foragable"
-    ]
+    "forageLocation": ["Mistria"],
+    "type": ["multi", "foragable"]
   },
   {
     "id": "sage",
     "name": "Sage",
     "image": "https://fieldsofmistria.wiki.gg/images/f/f8/Sage.png?5ab90b",
-    "season": [
-      "summer"
-    ],
+    "season": ["summer"],
     "source": "Foraging",
     "growthTime": 6,
     "regrowthTime": 3,
@@ -900,22 +641,14 @@
     "sellPrice": 30,
     "donateable": true,
     "museumSet": "Summer Forage",
-    "forageLocation": [
-      "The Narrows",
-      "The Beach"
-    ],
-    "type": [
-      "multi",
-      "foragable"
-    ]
+    "forageLocation": ["The Narrows", "The Beach"],
+    "type": ["multi", "foragable"]
   },
   {
     "id": "thyme",
     "name": "Thyme",
     "image": "https://fieldsofmistria.wiki.gg/images/3/3a/Thyme.png?72249f",
-    "season": [
-      "summer"
-    ],
+    "season": ["summer"],
     "source": "Foraging",
     "growthTime": 5,
     "regrowthTime": 3,
@@ -923,21 +656,14 @@
     "sellPrice": 30,
     "donateable": true,
     "museumSet": "Summer Forage",
-    "forageLocation": [
-      "Sweetwater Farm"
-    ],
-    "type": [
-      "multi",
-      "foragable"
-    ]
+    "forageLocation": ["Sweetwater Farm"],
+    "type": ["multi", "foragable"]
   },
   {
     "id": "peach",
     "name": "Peach",
     "image": "https://fieldsofmistria.wiki.gg/images/e/e2/Peach.png?7a168e",
-    "season": [
-      "summer"
-    ],
+    "season": ["summer"],
     "source": "General Store",
     "growthTime": 14,
     "regrowthTime": 3,
@@ -945,20 +671,14 @@
     "sellPrice": 45,
     "donateable": false,
     "museumSet": "None",
-    "forageLocation": [
-      "None"
-    ],
-    "type": [
-      "tree"
-    ]
+    "forageLocation": ["None"],
+    "type": ["tree"]
   },
   {
     "id": "pear",
     "name": "Pear",
     "image": "https://fieldsofmistria.wiki.gg/images/b/b0/Pear.png?bf0bb3",
-    "season": [
-      "summer"
-    ],
+    "season": ["summer"],
     "source": "General Store",
     "growthTime": 14,
     "regrowthTime": 3,
@@ -966,20 +686,14 @@
     "sellPrice": 45,
     "donateable": false,
     "museumSet": "None",
-    "forageLocation": [
-      "None"
-    ],
-    "type": [
-      "tree"
-    ]
+    "forageLocation": ["None"],
+    "type": ["tree"]
   },
   {
     "id": "cocount",
     "name": "Cocount",
     "image": "https://fieldsofmistria.wiki.gg/images/2/2f/Coconut.png?f5a286",
-    "season": [
-      "summer"
-    ],
+    "season": ["summer"],
     "source": "Foraging",
     "growthTime": 0,
     "regrowthTime": 0,
@@ -987,20 +701,14 @@
     "sellPrice": 30,
     "donateable": false,
     "museumSet": "None",
-    "forageLocation": [
-      "The Beach"
-    ],
-    "type": [
-      "foragable"
-    ]
+    "forageLocation": ["The Beach"],
+    "type": ["foragable"]
   },
   {
     "id": "hydrangea",
     "name": "Hydrangea",
     "image": "https://fieldsofmistria.wiki.gg/images/6/64/Hydrangea.png?d09921",
-    "season": [
-      "summer"
-    ],
+    "season": ["summer"],
     "source": "Foraging",
     "growthTime": 0,
     "regrowthTime": 0,
@@ -1008,20 +716,14 @@
     "sellPrice": 20,
     "donateable": false,
     "museumSet": "None",
-    "forageLocation": [
-      "The Eastern Road"
-    ],
-    "type": [
-      "foragable"
-    ]
+    "forageLocation": ["The Eastern Road"],
+    "type": ["foragable"]
   },
   {
     "id": "rose",
     "name": "Rose",
     "image": "https://fieldsofmistria.wiki.gg/images/4/4f/Rose.png?9f774c",
-    "season": [
-      "summer"
-    ],
+    "season": ["summer"],
     "source": "Foraging",
     "growthTime": 0,
     "regrowthTime": 0,
@@ -1029,20 +731,14 @@
     "sellPrice": 20,
     "donateable": false,
     "museumSet": "None",
-    "forageLocation": [
-      "The Manor's Gardens"
-    ],
-    "type": [
-      "foragable"
-    ]
+    "forageLocation": ["The Manor's Gardens"],
+    "type": ["foragable"]
   },
   {
     "id": "sesame",
     "name": "Sesame",
     "image": "https://fieldsofmistria.wiki.gg/images/0/07/Sesame.png?63348e",
-    "season": [
-      "summer"
-    ],
+    "season": ["summer"],
     "source": "Foraging",
     "growthTime": 0,
     "regrowthTime": 0,
@@ -1050,20 +746,14 @@
     "sellPrice": 30,
     "donateable": false,
     "museumSet": "None",
-    "forageLocation": [
-      "Sweetwater Farm"
-    ],
-    "type": [
-      "foragable"
-    ]
+    "forageLocation": ["Sweetwater Farm"],
+    "type": ["foragable"]
   },
   {
     "id": "wild-grapes",
     "name": "Wild Grapes",
     "image": "https://fieldsofmistria.wiki.gg/images/d/d2/Wild_grapes.png?42524d",
-    "season": [
-      "summer"
-    ],
+    "season": ["summer"],
     "source": "Foraging",
     "growthTime": 0,
     "regrowthTime": 0,
@@ -1071,20 +761,14 @@
     "sellPrice": 25,
     "donateable": false,
     "museumSet": "None",
-    "forageLocation": [
-      "The Narrows"
-    ],
-    "type": [
-      "foragable"
-    ]
+    "forageLocation": ["The Narrows"],
+    "type": ["foragable"]
   },
   {
     "id": "sweet-potato",
     "name": "Sweet Potato",
     "image": "https://fieldsofmistria.wiki.gg/images/2/27/Sweet_potato.png?78b4e5",
-    "season": [
-      "fall"
-    ],
+    "season": ["fall"],
     "source": "General Store",
     "growthTime": 4,
     "regrowthTime": 0,
@@ -1092,20 +776,14 @@
     "sellPrice": 40,
     "donateable": true,
     "museumSet": "Fall Crop",
-    "forageLocation": [
-      "None"
-    ],
-    "type": [
-      "single"
-    ]
+    "forageLocation": ["None"],
+    "type": ["single"]
   },
   {
     "id": "broccoli",
     "name": "Broccoli",
     "image": "https://fieldsofmistria.wiki.gg/images/f/f1/Broccoli.png?30b67c",
-    "season": [
-      "fall"
-    ],
+    "season": ["fall"],
     "source": "General Store",
     "growthTime": 6,
     "regrowthTime": 0,
@@ -1113,20 +791,14 @@
     "sellPrice": 75,
     "donateable": true,
     "museumSet": "Fall Crop",
-    "forageLocation": [
-      "None"
-    ],
-    "type": [
-      "single"
-    ]
+    "forageLocation": ["None"],
+    "type": ["single"]
   },
   {
     "id": "pumpkin",
     "name": "Pumpkin",
     "image": "https://fieldsofmistria.wiki.gg/images/6/64/Pumpkin.png?20d1e4",
-    "season": [
-      "fall"
-    ],
+    "season": ["fall"],
     "source": "General Store",
     "growthTime": 9,
     "regrowthTime": 0,
@@ -1134,20 +806,14 @@
     "sellPrice": 180,
     "donateable": true,
     "museumSet": "Fall Crop",
-    "forageLocation": [
-      "None"
-    ],
-    "type": [
-      "single"
-    ]
+    "forageLocation": ["None"],
+    "type": ["single"]
   },
   {
     "id": "celosia",
     "name": "Celosia",
     "image": "https://fieldsofmistria.wiki.gg/images/7/74/Celosia.png?5d3ec5",
-    "season": [
-      "fall"
-    ],
+    "season": ["fall"],
     "source": "General Store",
     "growthTime": 4,
     "regrowthTime": 0,
@@ -1155,20 +821,14 @@
     "sellPrice": 25,
     "donateable": true,
     "museumSet": "Fall Flower",
-    "forageLocation": [
-      "None"
-    ],
-    "type": [
-      "single"
-    ]
+    "forageLocation": ["None"],
+    "type": ["single"]
   },
   {
     "id": "chrysanthemum",
     "name": "Chrysanthemum",
     "image": "https://fieldsofmistria.wiki.gg/images/7/7f/Chrysanthemum.png?4b937b",
-    "season": [
-      "fall"
-    ],
+    "season": ["fall"],
     "source": "General Store",
     "growthTime": 6,
     "regrowthTime": 0,
@@ -1176,20 +836,14 @@
     "sellPrice": 30,
     "donateable": true,
     "museumSet": "Fall Flower",
-    "forageLocation": [
-      "None"
-    ],
-    "type": [
-      "single"
-    ]
+    "forageLocation": ["None"],
+    "type": ["single"]
   },
   {
     "id": "viola",
     "name": "Viola",
     "image": "https://fieldsofmistria.wiki.gg/images/4/48/Viola.png?961d0a",
-    "season": [
-      "fall"
-    ],
+    "season": ["fall"],
     "source": "Foraging",
     "growthTime": 6,
     "regrowthTime": 0,
@@ -1197,20 +851,14 @@
     "sellPrice": 40,
     "donateable": true,
     "museumSet": "Fall Flower",
-    "forageLocation": [
-      "The Eastern Road"
-    ],
-    "type": [
-      "single"
-    ]
+    "forageLocation": ["The Eastern Road"],
+    "type": ["single"]
   },
   {
     "id": "cranberry",
     "name": "Cranberry",
     "image": "https://fieldsofmistria.wiki.gg/images/d/dd/Cranberry.png?5b732c",
-    "season": [
-      "fall"
-    ],
+    "season": ["fall"],
     "source": "General Store",
     "growthTime": 5,
     "regrowthTime": 3,
@@ -1218,20 +866,14 @@
     "sellPrice": 125,
     "donateable": true,
     "museumSet": "Fall Crop",
-    "forageLocation": [
-      "None"
-    ],
-    "type": [
-      "multi"
-    ]
+    "forageLocation": ["None"],
+    "type": ["multi"]
   },
   {
     "id": "onion",
     "name": "Onion",
     "image": "https://fieldsofmistria.wiki.gg/images/5/51/Onion.png?472749",
-    "season": [
-      "fall"
-    ],
+    "season": ["fall"],
     "source": "General Store",
     "growthTime": 5,
     "regrowthTime": 3,
@@ -1239,20 +881,14 @@
     "sellPrice": 135,
     "donateable": false,
     "museumSet": "None",
-    "forageLocation": [
-      "None"
-    ],
-    "type": [
-      "multi"
-    ]
+    "forageLocation": ["None"],
+    "type": ["multi"]
   },
   {
     "id": "wheat",
     "name": "Wheat",
     "image": "https://fieldsofmistria.wiki.gg/images/e/e2/Wheat.png?eb2ea5",
-    "season": [
-      "fall"
-    ],
+    "season": ["fall"],
     "source": "General Store",
     "growthTime": 9,
     "regrowthTime": 3,
@@ -1260,20 +896,14 @@
     "sellPrice": 150,
     "donateable": false,
     "museumSet": "None",
-    "forageLocation": [
-      "None"
-    ],
-    "type": [
-      "multi"
-    ]
+    "forageLocation": ["None"],
+    "type": ["multi"]
   },
   {
     "id": "rice-stalk",
     "name": "Rice Stalk",
     "image": "https://fieldsofmistria.wiki.gg/images/0/05/Rice_stalk.png?635522",
-    "season": [
-      "fall"
-    ],
+    "season": ["fall"],
     "source": "General Store",
     "growthTime": 9,
     "regrowthTime": 3,
@@ -1281,20 +911,14 @@
     "sellPrice": 150,
     "donateable": false,
     "museumSet": "None",
-    "forageLocation": [
-      "None"
-    ],
-    "type": [
-      "multi"
-    ]
+    "forageLocation": ["None"],
+    "type": ["multi"]
   },
   {
     "id": "garlic",
     "name": "Garlic",
     "image": "https://fieldsofmistria.wiki.gg/images/c/cc/Garlic.png?6941c1",
-    "season": [
-      "fall"
-    ],
+    "season": ["fall"],
     "source": "Foraging",
     "growthTime": 5,
     "regrowthTime": 3,
@@ -1302,21 +926,14 @@
     "sellPrice": 30,
     "donateable": true,
     "museumSet": "Fall Forage",
-    "forageLocation": [
-      "The Eastern Road"
-    ],
-    "type": [
-      "multi",
-      "foragable"
-    ]
+    "forageLocation": ["The Eastern Road"],
+    "type": ["multi", "foragable"]
   },
   {
     "id": "heather",
     "name": "Heather",
     "image": "https://fieldsofmistria.wiki.gg/images/4/46/Heather.png?d6b9bd",
-    "season": [
-      "fall"
-    ],
+    "season": ["fall"],
     "source": "Foraging",
     "growthTime": 9,
     "regrowthTime": 3,
@@ -1324,23 +941,14 @@
     "sellPrice": 30,
     "donateable": true,
     "museumSet": "Fall Forage",
-    "forageLocation": [
-      "Mistria",
-      "The Beach",
-      "The Narrows"
-    ],
-    "type": [
-      "multi",
-      "foragable"
-    ]
+    "forageLocation": ["Mistria", "The Beach", "The Narrows"],
+    "type": ["multi", "foragable"]
   },
   {
     "id": "moon-fruit",
     "name": "Moon Fruit",
     "image": "https://fieldsofmistria.wiki.gg/images/6/63/Moon_fruit.png?9abfb3",
-    "season": [
-      "fall"
-    ],
+    "season": ["fall"],
     "source": "Foraging",
     "growthTime": 5,
     "regrowthTime": 3,
@@ -1348,23 +956,14 @@
     "sellPrice": 35,
     "donateable": true,
     "museumSet": "Fall Forage",
-    "forageLocation": [
-      "The Eastern Road",
-      "Sweetwater Farm",
-      "The Beach"
-    ],
-    "type": [
-      "multi",
-      "foragable"
-    ]
+    "forageLocation": ["The Eastern Road", "Sweetwater Farm", "The Beach"],
+    "type": ["multi", "foragable"]
   },
   {
     "id": "rosemary",
     "name": "Rosemary",
     "image": "https://fieldsofmistria.wiki.gg/images/7/76/Rosemary.png?880ad8",
-    "season": [
-      "fall"
-    ],
+    "season": ["fall"],
     "source": "Foraging",
     "growthTime": 5,
     "regrowthTime": 3,
@@ -1372,21 +971,14 @@
     "sellPrice": 30,
     "donateable": true,
     "museumSet": "Fall Forage",
-    "forageLocation": [
-      "Sweetwater Farm"
-    ],
-    "type": [
-      "multi",
-      "foragable"
-    ]
+    "forageLocation": ["Sweetwater Farm"],
+    "type": ["multi", "foragable"]
   },
   {
     "id": "apple",
     "name": "Apple",
     "image": "https://fieldsofmistria.wiki.gg/images/7/7d/Apple.png?bfa8b3",
-    "season": [
-      "fall"
-    ],
+    "season": ["fall"],
     "source": "General Store",
     "growthTime": 14,
     "regrowthTime": 3,
@@ -1394,20 +986,14 @@
     "sellPrice": 45,
     "donateable": true,
     "museumSet": "Fall Crop",
-    "forageLocation": [
-      "None"
-    ],
-    "type": [
-      "tree"
-    ]
+    "forageLocation": ["None"],
+    "type": ["tree"]
   },
   {
     "id": "orange",
     "name": "Orange",
     "image": "https://fieldsofmistria.wiki.gg/images/4/43/Orange.png?bc3277",
-    "season": [
-      "fall"
-    ],
+    "season": ["fall"],
     "source": "General Store",
     "growthTime": 14,
     "regrowthTime": 3,
@@ -1415,20 +1001,14 @@
     "sellPrice": 45,
     "donateable": false,
     "museumSet": "None",
-    "forageLocation": [
-      "None"
-    ],
-    "type": [
-      "tree"
-    ]
+    "forageLocation": ["None"],
+    "type": ["tree"]
   },
   {
     "id": "blackberry",
     "name": "Blackberry",
     "image": "https://fieldsofmistria.wiki.gg/images/2/25/Blackberry.png?f3329d",
-    "season": [
-      "fall"
-    ],
+    "season": ["fall"],
     "source": "Foraging",
     "growthTime": 0,
     "regrowthTime": 0,
@@ -1443,17 +1023,13 @@
       "The Summit",
       "The Western Ruins"
     ],
-    "type": [
-      "foragable"
-    ]
+    "type": ["foragable"]
   },
   {
     "id": "chestnut",
     "name": "Chestnut",
     "image": "https://fieldsofmistria.wiki.gg/images/4/47/Chestnut.png?33615d",
-    "season": [
-      "fall"
-    ],
+    "season": ["fall"],
     "source": "Foraging",
     "growthTime": 0,
     "regrowthTime": 0,
@@ -1461,22 +1037,14 @@
     "sellPrice": 15,
     "donateable": true,
     "museumSet": "Fall Forage",
-    "forageLocation": [
-      "The Beach",
-      "Sweetwater Farm",
-      "The Narrows"
-    ],
-    "type": [
-      "foragable"
-    ]
+    "forageLocation": ["The Beach", "Sweetwater Farm", "The Narrows"],
+    "type": ["foragable"]
   },
   {
     "id": "fog-orchid",
     "name": "Fog Orchid",
     "image": "https://fieldsofmistria.wiki.gg/images/2/23/Fog_orchid.png?bf2bd7",
-    "season": [
-      "fall"
-    ],
+    "season": ["fall"],
     "source": "Foraging",
     "growthTime": 0,
     "regrowthTime": 0,
@@ -1484,21 +1052,14 @@
     "sellPrice": 40,
     "donateable": true,
     "museumSet": "Fall Flower",
-    "forageLocation": [
-      "The Eastern Road",
-      "The Western Ruins"
-    ],
-    "type": [
-      "foragable"
-    ]
+    "forageLocation": ["The Eastern Road", "The Western Ruins"],
+    "type": ["foragable"]
   },
   {
     "id": "horseradish",
     "name": "Horseradish",
     "image": "https://fieldsofmistria.wiki.gg/images/7/7b/Horseradish.png?72ccb7",
-    "season": [
-      "fall"
-    ],
+    "season": ["fall"],
     "source": "Foraging",
     "growthTime": 0,
     "regrowthTime": 0,
@@ -1506,22 +1067,14 @@
     "sellPrice": 30,
     "donateable": true,
     "museumSet": "Fall Forage",
-    "forageLocation": [
-      "Sweetwater Farm",
-      "The Eastern Road",
-      "The Beach"
-    ],
-    "type": [
-      "foragable"
-    ]
+    "forageLocation": ["Sweetwater Farm", "The Eastern Road", "The Beach"],
+    "type": ["foragable"]
   },
   {
     "id": "beet",
     "name": "Beet",
     "image": "https://fieldsofmistria.wiki.gg/images/a/a4/Beet.png?906797",
-    "season": [
-      "winter"
-    ],
+    "season": ["winter"],
     "source": "General Store",
     "growthTime": 4,
     "regrowthTime": 0,
@@ -1529,20 +1082,14 @@
     "sellPrice": 40,
     "donateable": true,
     "museumSet": "Winter Crop",
-    "forageLocation": [
-      "None"
-    ],
-    "type": [
-      "single"
-    ]
+    "forageLocation": ["None"],
+    "type": ["single"]
   },
   {
     "id": "cauliflower",
     "name": "Cauliflower",
     "image": "https://fieldsofmistria.wiki.gg/images/a/aa/Cauliflower.png?84a1b0",
-    "season": [
-      "winter"
-    ],
+    "season": ["winter"],
     "source": "General Store",
     "growthTime": 6,
     "regrowthTime": 0,
@@ -1550,20 +1097,14 @@
     "sellPrice": 75,
     "donateable": true,
     "museumSet": "Winter Crop",
-    "forageLocation": [
-      "None"
-    ],
-    "type": [
-      "single"
-    ]
+    "forageLocation": ["None"],
+    "type": ["single"]
   },
   {
     "id": "daikon-radish",
     "name": "Daikon Radish",
     "image": "https://fieldsofmistria.wiki.gg/images/0/0e/Daikon_radish.png?8c7a76",
-    "season": [
-      "winter"
-    ],
+    "season": ["winter"],
     "source": "General Store",
     "growthTime": 9,
     "regrowthTime": 0,
@@ -1571,20 +1112,14 @@
     "sellPrice": 180,
     "donateable": true,
     "museumSet": "Winter Crop",
-    "forageLocation": [
-      "None"
-    ],
-    "type": [
-      "single"
-    ]
+    "forageLocation": ["None"],
+    "type": ["single"]
   },
   {
     "id": "frost-lily",
     "name": "Frost Lily",
     "image": "https://fieldsofmistria.wiki.gg/images/d/d0/Frost_lily.png?366ced",
-    "season": [
-      "winter"
-    ],
+    "season": ["winter"],
     "source": "General Store",
     "growthTime": 4,
     "regrowthTime": 0,
@@ -1592,22 +1127,14 @@
     "sellPrice": 25,
     "donateable": true,
     "museumSet": "Winter Flower",
-    "forageLocation": [
-      "The Eastern Road",
-      "The Beach",
-      "The Narrows"
-    ],
-    "type": [
-      "single"
-    ]
+    "forageLocation": ["The Eastern Road", "The Beach", "The Narrows"],
+    "type": ["single"]
   },
   {
     "id": "poinsettia",
     "name": "Poinsettia",
     "image": "https://fieldsofmistria.wiki.gg/images/3/3a/Poinsettia.png?b8136d",
-    "season": [
-      "winter"
-    ],
+    "season": ["winter"],
     "source": "General Store",
     "growthTime": 6,
     "regrowthTime": 0,
@@ -1615,22 +1142,14 @@
     "sellPrice": 30,
     "donateable": true,
     "museumSet": "Winter Flower",
-    "forageLocation": [
-      "The Beach",
-      "The Narrows",
-      "Sweetwater Farm"
-    ],
-    "type": [
-      "single"
-    ]
+    "forageLocation": ["The Beach", "The Narrows", "Sweetwater Farm"],
+    "type": ["single"]
   },
   {
     "id": "snapdragon",
     "name": "Snapdragon",
     "image": "https://fieldsofmistria.wiki.gg/images/2/23/Snapdragon.png?38edc9",
-    "season": [
-      "winter"
-    ],
+    "season": ["winter"],
     "source": "Foraging",
     "growthTime": 6,
     "regrowthTime": 0,
@@ -1638,21 +1157,14 @@
     "sellPrice": 40,
     "donateable": true,
     "museumSet": "Winter Flower",
-    "forageLocation": [
-      "The Western Ruins"
-    ],
-    "type": [
-      "single",
-      "foragable"
-    ]
+    "forageLocation": ["The Western Ruins"],
+    "type": ["single", "foragable"]
   },
   {
     "id": "snow-peas",
     "name": "Snow Peas",
     "image": "https://fieldsofmistria.wiki.gg/images/f/ff/Snow_peas.png?19b20f",
-    "season": [
-      "winter"
-    ],
+    "season": ["winter"],
     "source": "General Store",
     "growthTime": 5,
     "regrowthTime": 3,
@@ -1660,20 +1172,14 @@
     "sellPrice": 125,
     "donateable": true,
     "museumSet": "Winter Crop",
-    "forageLocation": [
-      "None"
-    ],
-    "type": [
-      "multi"
-    ]
+    "forageLocation": ["None"],
+    "type": ["multi"]
   },
   {
     "id": "burdock-root",
     "name": "Burdock Root",
     "image": "https://fieldsofmistria.wiki.gg/images/5/56/Burdock_root.png?9584e1",
-    "season": [
-      "winter"
-    ],
+    "season": ["winter"],
     "source": "Foraging",
     "growthTime": 5,
     "regrowthTime": 3,
@@ -1681,23 +1187,14 @@
     "sellPrice": 30,
     "donateable": true,
     "museumSet": "Winter Forage",
-    "forageLocation": [
-      "Mistria",
-      "The Eastern Road",
-      "The Narrows"
-    ],
-    "type": [
-      "multi",
-      "foragable"
-    ]
+    "forageLocation": ["Mistria", "The Eastern Road", "The Narrows"],
+    "type": ["multi", "foragable"]
   },
   {
     "id": "jasmine",
     "name": "Jasmine",
     "image": "https://fieldsofmistria.wiki.gg/images/c/c1/Jasmine.png?db70cd",
-    "season": [
-      "winter"
-    ],
+    "season": ["winter"],
     "source": "Foraging",
     "growthTime": 9,
     "regrowthTime": 3,
@@ -1705,22 +1202,14 @@
     "sellPrice": 35,
     "donateable": true,
     "museumSet": "Winter Flower",
-    "forageLocation": [
-      "Sweetwater Farm",
-      "The Eastern Road"
-    ],
-    "type": [
-      "multi",
-      "foragable"
-    ]
+    "forageLocation": ["Sweetwater Farm", "The Eastern Road"],
+    "type": ["multi", "foragable"]
   },
   {
     "id": "pomegranate",
     "name": "Pomegranate",
     "image": "https://fieldsofmistria.wiki.gg/images/1/1b/Pomegranate.png?ba69ad",
-    "season": [
-      "winter"
-    ],
+    "season": ["winter"],
     "source": "General Store",
     "growthTime": 14,
     "regrowthTime": 3,
@@ -1728,20 +1217,14 @@
     "sellPrice": 45,
     "donateable": true,
     "museumSet": "Winter Crop",
-    "forageLocation": [
-      "None"
-    ],
-    "type": [
-      "tree"
-    ]
+    "forageLocation": ["None"],
+    "type": ["tree"]
   },
   {
     "id": "crocus",
     "name": "Crocus",
     "image": "https://fieldsofmistria.wiki.gg/images/2/2f/Crocus.png?9fba3c",
-    "season": [
-      "winter"
-    ],
+    "season": ["winter"],
     "source": "Foraging",
     "growthTime": 0,
     "regrowthTime": 0,
@@ -1749,22 +1232,14 @@
     "sellPrice": 10,
     "donateable": true,
     "museumSet": "Winter Flower",
-    "forageLocation": [
-      "The Eastern Road",
-      "Sweetwater Farm",
-      "The Beach"
-    ],
-    "type": [
-      "foragable"
-    ]
+    "forageLocation": ["The Eastern Road", "Sweetwater Farm", "The Beach"],
+    "type": ["foragable"]
   },
   {
     "id": "glowberry",
     "name": "Glowberry",
     "image": "https://fieldsofmistria.wiki.gg/images/e/e6/Glowberry.png?c1ba9c",
-    "season": [
-      "winter"
-    ],
+    "season": ["winter"],
     "source": "Foraging",
     "growthTime": 0,
     "regrowthTime": 0,
@@ -1779,17 +1254,13 @@
       "The Narrows",
       "The Western Ruins"
     ],
-    "type": [
-      "foragable"
-    ]
+    "type": ["foragable"]
   },
   {
     "id": "holly",
     "name": "Holly",
     "image": "https://fieldsofmistria.wiki.gg/images/b/b8/Holly.png?3b62e8",
-    "season": [
-      "winter"
-    ],
+    "season": ["winter"],
     "source": "Foraging",
     "growthTime": 0,
     "regrowthTime": 0,
@@ -1803,17 +1274,13 @@
       "The Narrows",
       "The Western Ruins"
     ],
-    "type": [
-      "foragable"
-    ]
+    "type": ["foragable"]
   },
   {
     "id": "oyster-mushroom",
     "name": "Oyster Mushroom",
     "image": "https://fieldsofmistria.wiki.gg/images/4/42/Oyster_mushroom.png?25c214",
-    "season": [
-      "winter"
-    ],
+    "season": ["winter"],
     "source": "Foraging",
     "growthTime": 0,
     "regrowthTime": 0,
@@ -1821,22 +1288,14 @@
     "sellPrice": 25,
     "donateable": true,
     "museumSet": "Winter Forage",
-    "forageLocation": [
-      "The Eastern Road",
-      "Mistria",
-      "The Beach"
-    ],
-    "type": [
-      "foragable"
-    ]
+    "forageLocation": ["The Eastern Road", "Mistria", "The Beach"],
+    "type": ["foragable"]
   },
   {
     "id": "pineshroom",
     "name": "Pineshroom",
     "image": "https://fieldsofmistria.wiki.gg/images/3/38/Pineshroom.png?91d8b6",
-    "season": [
-      "winter"
-    ],
+    "season": ["winter"],
     "source": "Foraging",
     "growthTime": 0,
     "regrowthTime": 0,
@@ -1844,20 +1303,14 @@
     "sellPrice": 25,
     "donateable": true,
     "museumSet": "Winter Forage",
-    "forageLocation": [
-      "Sweetwater Farm"
-    ],
-    "type": [
-      "foragable"
-    ]
+    "forageLocation": ["Sweetwater Farm"],
+    "type": ["foragable"]
   },
   {
     "id": "rose-hip",
     "name": "Rose Hip",
     "image": "https://fieldsofmistria.wiki.gg/images/5/56/Rose_hip.png?888441",
-    "season": [
-      "winter"
-    ],
+    "season": ["winter"],
     "source": "Foraging",
     "growthTime": 0,
     "regrowthTime": 0,
@@ -1865,20 +1318,14 @@
     "sellPrice": 20,
     "donateable": true,
     "museumSet": "Winter Forage",
-    "forageLocation": [
-      "The Manor's Gardens"
-    ],
-    "type": [
-      "foragable"
-    ]
+    "forageLocation": ["The Manor's Gardens"],
+    "type": ["foragable"]
   },
   {
     "id": "wintergreen-berry",
     "name": "Wintergreen Berry",
     "image": "https://fieldsofmistria.wiki.gg/images/7/74/Wintergreen_berry.png?6a5603",
-    "season": [
-      "winter"
-    ],
+    "season": ["winter"],
     "source": "Foraging",
     "growthTime": 0,
     "regrowthTime": 0,
@@ -1887,8 +1334,201 @@
     "donateable": false,
     "museumSet": "None",
     "forageLocation": ["The Narrows", "The Western Ruins", "The Deep Woods"],
-    "type": [
-      "foragable"
-    ]
+    "type": ["foragable"]
+  },
+  {
+    "id": "tide-lettuce",
+    "name": "Tide Lettuce",
+    "image": "https://fieldsofmistria.wiki.gg/images/9/9a/Tide_lettuce.png?b169a9",
+    "season": ["all"],
+    "source": "Foraging",
+    "growthTime": 0,
+    "regrowthTime": 0,
+    "seedPrice": 0,
+    "sellPrice": 30,
+    "donateable": true,
+    "museumSet": "Tide Caverns",
+    "forageLocation": ["The Tide Caverns"],
+    "type": ["foragable"]
+  },
+  {
+    "id": "sea-grapes",
+    "name": "Sea Grapes",
+    "image": "https://fieldsofmistria.wiki.gg/images/1/14/Sea_grapes.png?48f5e9",
+    "season": ["all"],
+    "source": "Foraging",
+    "growthTime": 0,
+    "regrowthTime": 0,
+    "seedPrice": 0,
+    "sellPrice": 35,
+    "donateable": true,
+    "museumSet": "Tide Caverns",
+    "forageLocation": ["The Tide Caverns"],
+    "type": ["foragable"]
+  },
+  {
+    "id": "underseaweed",
+    "name": "Underseaweed",
+    "image": "https://fieldsofmistria.wiki.gg/images/7/76/Underseaweed.png?e53352",
+    "season": [""],
+    "source": "Foraging",
+    "growthTime": 0,
+    "regrowthTime": 0,
+    "seedPrice": 0,
+    "sellPrice": 30,
+    "donateable": true,
+    "museumSet": "Tide Caverns",
+    "forageLocation": ["The Tide Caverns"],
+    "type": ["foragable"]
+  },
+  {
+    "id": "jade-dulse",
+    "name": "Jade Dulse",
+    "image": "https://fieldsofmistria.wiki.gg/images/a/aa/Jade_dulse.png?3e1efb",
+    "season": ["all"],
+    "source": "Foraging",
+    "growthTime": 0,
+    "regrowthTime": 0,
+    "seedPrice": 0,
+    "sellPrice": 30,
+    "donateable": true,
+    "museumSet": "Tide Caverns",
+    "forageLocation": ["The Tide Caverns"],
+    "type": ["foragable"]
+  },
+  {
+    "id": "mines-mussels",
+    "name": "Mines Mussels",
+    "image": "https://fieldsofmistria.wiki.gg/images/d/d2/Mines_mussels.png?f330ef",
+    "season": ["all"],
+    "source": "Foraging",
+    "growthTime": 0,
+    "regrowthTime": 0,
+    "seedPrice": 0,
+    "sellPrice": 35,
+    "donateable": true,
+    "museumSet": "Tide Caverns",
+    "forageLocation": ["The Tide Caverns"],
+    "type": ["foragable"]
+  },
+  {
+    "id": "upper-mines-mushroom",
+    "name": "Upper Mines Mushroom",
+    "image": "https://fieldsofmistria.wiki.gg/images/2/2e/Upper_mines_mushroom.png?93e6f3",
+    "season": ["all"],
+    "source": "Foraging",
+    "growthTime": 0,
+    "regrowthTime": 0,
+    "seedPrice": 0,
+    "sellPrice": 20,
+    "donateable": true,
+    "museumSet": "Upper Mines",
+    "forageLocation": ["The Upper Mines"],
+    "type": ["foragable"]
+  },
+  {
+    "id": "sweetroot",
+    "name": "Sweetroot",
+    "image": "https://fieldsofmistria.wiki.gg/images/3/3e/Sweetroot.png?612c45",
+    "season": ["all"],
+    "source": "Foraging",
+    "growthTime": 0,
+    "regrowthTime": 0,
+    "seedPrice": 0,
+    "sellPrice": 20,
+    "donateable": true,
+    "museumSet": "Upper Mines",
+    "forageLocation": ["The Upper Mines"],
+    "type": ["foragable"]
+  },
+  {
+    "id": "ash-mushroom",
+    "name": "Ash Mushroom",
+    "image": "https://fieldsofmistria.wiki.gg/images/2/21/Ash_mushroom.png?31589f",
+    "season": ["all"],
+    "source": "Foraging",
+    "growthTime": 0,
+    "regrowthTime": 0,
+    "seedPrice": 0,
+    "sellPrice": 10,
+    "donateable": true,
+    "museumSet": "Lava Caves",
+    "forageLocation": ["The Lava Caves"],
+    "type": ["foragable"]
+  },
+  {
+    "id": "flame-pepper",
+    "name": "Flame Pepper",
+    "image": "https://fieldsofmistria.wiki.gg/images/2/29/Flame_pepper.png?40787c",
+    "season": ["all"],
+    "source": "Foraging",
+    "growthTime": 0,
+    "regrowthTime": 0,
+    "seedPrice": 0,
+    "sellPrice": 35,
+    "donateable": true,
+    "museumSet": "Lava Caves",
+    "forageLocation": ["The Lava Caves"],
+    "type": ["foragable"]
+  },
+  {
+    "id": "hot-potato",
+    "name": "Hot Potato",
+    "image": "https://fieldsofmistria.wiki.gg/images/4/44/Hot_potato.png?cd9343",
+    "season": ["all"],
+    "source": "Foraging",
+    "growthTime": 0,
+    "regrowthTime": 0,
+    "seedPrice": 0,
+    "sellPrice": 40,
+    "donateable": true,
+    "museumSet": "Lava Caves",
+    "forageLocation": ["The Lava Caves"],
+    "type": ["foragable"]
+  },
+  {
+    "id": "earthshroom",
+    "name": "Earthshroom",
+    "image": "https://fieldsofmistria.wiki.gg/images/8/83/Earthshroom.png?6b48ee",
+    "season": ["all"],
+    "source": "Foraging",
+    "growthTime": 0,
+    "regrowthTime": 0,
+    "seedPrice": 0,
+    "sellPrice": 20,
+    "donateable": true,
+    "museumSet": "Deep Earth",
+    "forageLocation": ["The Deep Earth"],
+    "type": ["foragable"]
+  },
+  {
+    "id": "lava-chestnuts",
+    "name": "Lava Chestnuts",
+    "image": "https://fieldsofmistria.wiki.gg/images/3/33/Lava_chestnuts.png?cb398c",
+    "season": ["all"],
+    "source": "Foraging",
+    "growthTime": 0,
+    "regrowthTime": 0,
+    "seedPrice": 0,
+    "sellPrice": 45,
+    "donateable": true,
+    "museumSet": "Lava Caves",
+    "forageLocation": ["The Lava Caves"],
+    "type": ["foragable"]
+  },
+  {
+    "id": "spirit-mushroom",
+    "name": "Spirit Mushroom",
+    "image": "https://fieldsofmistria.wiki.gg/images/8/80/Spirit_mushroom.png?d86b94",
+    "season": ["all"],
+    "source": "Foraging",
+    "growthTime": 0,
+    "regrowthTime": 0,
+    "seedPrice": 0,
+    "sellPrice": 35,
+    "donateable": true,
+    "museumSet": "Deep Woods",
+    "forageLocation": ["The Deep Woods"],
+    "type": ["foragable"]
   }
 ]
