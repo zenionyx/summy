@@ -39,6 +39,7 @@ export default function Navbar() {
     return (
       <nav className="w-full flex justify-evenly bg-blue-50 py-2">
         <Link to="/">Home</Link>
+        <Link to="/search">Search</Link>
         <Link to="/crops">Crops</Link>
         <Link to="/fish">Fish</Link>
         <Link to="/recipes">Recipes</Link>

@@ -1,7 +1,13 @@
 import { useState } from "react";
-import { useSearchParams, Link, useParams, useLocation } from "react-router-dom";
+import {
+  useSearchParams,
+  Link,
+  useParams,
+  useLocation,
+} from "react-router-dom";
 import crops from "../assets/json/crops.json";
 import fish from "../assets/json/fish.json";
+import recipes from "../assets/json/recipes.json";
 import SimpleFoodCard from "../comps/mini/SimpleFoodCard";
 import SearchNav from "../comps/mini/SearchNav";
 
@@ -14,6 +20,7 @@ export default function Search() {
   const combinedData = [
     ...crops.map((item) => ({ ...item, type: "crop" })),
     ...fish.map((item) => ({ ...item, type: "fish" })),
+    ...recipes.map((item) => ({ ...item, type: "recipe" })),
   ];
 
   const filteredItems = combinedData.filter((item) =>
@@ -24,6 +31,7 @@ export default function Search() {
 
   if (id && type === "crop") return <CropDetail />;
   if (id && type === "fish") return <FishDetail />;
+  if (id && type === "recipe") return <RecipeDetail />;
 
   return (
     <div>
@@ -56,6 +64,8 @@ export default function Search() {
                   season={item.season}
                   seedPrice={item.seedPrice}
                   sellPrice={item.sellPrice}
+                  skillLevel={item.skillLevel}
+                  health={item.health}
                   isFavourited={item.isFavourited}
                   type={item.type}
                 />

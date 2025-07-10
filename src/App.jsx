@@ -8,6 +8,7 @@ import CropDetail from "./pages/CropDetail";
 import Fish from "./pages/Fish";
 import FishDetail from "./pages/FishDetail";
 import Recipes from "./pages/Recipes";
+import RecipeDetail from "./pages/RecipeDetail";
 
 function App() {
   return (
@@ -24,9 +25,8 @@ function App() {
           <Route path="/fish" element={<Fish />} />
           <Route path="/fish/:id" element={<FishDetail />} />
 
-          <Route path="/recipes" element={<Recipes />}>
-            {/* <Route path=":id" element={<RecipeDetail />} /> */}
-          </Route>
+          <Route path="/recipes" element={<Recipes />} />
+          <Route path="/recipe/:id" element={<RecipeDetail />} />
         </Route>
       </Routes>
     </>

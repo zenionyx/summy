@@ -1,0 +1,78 @@
+[
+  {
+    "id": "rosehip-jam",
+    "name": "Rosehip Jam",
+    "image": "https://fieldsofmistria.wiki.gg/images/7/79/Rosehip_jam.png?e58fdf",
+    "ingredients": [
+      "Rose Hip",
+      "Sugar"
+    ],
+    "howMany": [
+      1,
+      1
+    ],
+    "health": 34,
+    "time": 20,
+    "skillLevel": 4,
+    "kitchenTier": 1,
+    "source": "Valen's request for Rose Hips",
+    "sellPrice": 130,
+    "type": "Jam"
+  },
+  {
+    "id": "blueberry-jam",
+    "name": "Blueberry Jam",
+    "image": "https://fieldsofmistria.wiki.gg/images/1/16/Blueberry_jam.png?1984e2",
+    "ingredients": ["Blueberry", "Sugar"],
+    "howMany": [6, 1],
+    "health": 22,
+    "time": 20,
+    "skillLevel": 2,
+    "kitchenTier": 1,
+    "source": "Reina's request for Blueberries",
+    "sellPrice": 140,
+    "type": "Jam"
+  },
+  {
+    "id": "blackberry-jam",
+    "name": "Blackberry Jam",
+    "image": "https://fieldsofmistria.wiki.gg/images/c/cc/Blackberry_jam.png?5b4ea8",
+    "ingredients": ["Blackberry", "Sugar"],
+    "howMany": [6, 1],
+    "health": 22,
+    "time": 20,
+    "skillLevel": 2,
+    "kitchenTier": 1,
+    "source": "Elsie's request for Blackberries",
+    "sellPrice": 140,
+    "type": "Jam"
+  },
+  {
+    "id": "marmalade",
+    "name": "Marmalade",
+    "image": "https://fieldsofmistria.wiki.gg/images/e/ed/Marmalade.png?2a6624",
+    "ingredients": ["Orange", "Sugar"],
+    "howMany": [1, 1],
+    "health": 48,
+    "time": 20,
+    "skillLevel": 8,
+    "kitchenTier": 1,
+    "source": "Elsie's request for an Orange",
+    "sellPrice": 160,
+    "type": "Jam"
+  },
+  {
+    "id": "wild-berry-jam",
+    "name": "Wild Berry Jam",
+    "image": "https://fieldsofmistria.wiki.gg/images/4/42/Wild_berry_jam.png?975885",
+    "ingredients": ["Wild Berries", "Sugar"],
+    "howMany": [6, 1],
+    "health": 18,
+    "time": 20,
+    "skillLevel": 2,
+    "kitchenTier": 1,
+    "source": "Available From Start",
+    "sellPrice": 115,
+    "type": "Jam"
+  }
+]

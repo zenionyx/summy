@@ -7,6 +7,8 @@ import {
   Heart,
   TreePine,
   RefreshCw,
+  HeartPlus,
+  CookingPot,
 } from "lucide-react";
 
 const seasonMap = {
@@ -23,8 +25,10 @@ export default function SimpleFoodCard({
   season = [],
   seedPrice,
   sellPrice,
+  health,
+  skillLevel,
   isFavourited = false,
-  type = "crop", // new
+  type = "crop",
 }) {
   const isForage = seedPrice === 0;
 
@@ -47,40 +51,54 @@ export default function SimpleFoodCard({
       </h3>
 
       {/* Season Pills */}
-      <div className="flex gap-1 flex-wrap justify-center my-2">
-        {season.map((s, i) => {
-          const data = seasonMap[s.toLowerCase()];
-          if (!data) return null;
-          const { icon: Icon, color } = data;
+      {type === "crop" || type === "fish" ? (
+        <div className="flex gap-1 flex-wrap justify-center my-2">
+          {season.map((s, i) => {
+            const data = seasonMap[s.toLowerCase()];
+            if (!data) return null;
+            const { icon: Icon, color } = data;
 
-          return (
-            <div
-              key={i}
-              className={`w-6 h-6 rounded-md flex items-center justify-center ${color}`}
-            >
-              <Icon className="w-3.5 h-3.5" />
-            </div>
-          );
-        })}
-      </div>
+            return (
+              <div
+                key={i}
+                className={`w-6 h-6 rounded-md flex items-center justify-center ${color}`}
+              >
+                <Icon className="w-3.5 h-3.5" />
+              </div>
+            );
+          })}
+        </div>
+      ) : type === "recipe" ? (
+        <div className="flex gap-1 flex-wrap justify-center my-2">
+          <div className="bg-lime-100 text-lime-700rounded-md flex items-center justify-center gap-1 p-[2px] px-1">
+            <CookingPot className="w-3.5 h-3.5 " />
+            <p className="text-sm">{skillLevel}</p>
+          </div>
+          <div className=" bg-pink-100 text-pink-700  rounded-md flex items-center justify-center gap-1 p-[2px] px-[6px] ">
+            <HeartPlus className="w-3.5 h-3.5 " />
+            <p className="text-sm ">{health}</p>
+          </div>
+        </div>
+      ) : null}
 
       {/* Price / Details */}
       {type === "crop" ? (
         <div className="text-center text-base mt-1 flex items-center gap-2 justify-center">
+          <p className="font-semibold text-gray-800 flex items-center gap-1">
+            <BadgeCent className="fill-yellow-100 text-yellow-500 w-5" />
+            {sellPrice}t
+          </p>
+
+          <p>·</p>
           {isForage ? (
             <p className="font-semibold text-green-200 flex justify-center items-center gap-1 w-6 h-6 bg-green-700 rounded-full">
               <TreePine className="w-4 h-4" />
             </p>
           ) : (
-            <p className="font-semibold text-gray-800 flex items-center gap-1">
-              <BadgeCent className="fill-yellow-100 text-yellow-500 w-5" />
-              {seedPrice}t
-            </p>
+            <p className="text-gray-500">{seedPrice}t</p>
           )}
-          <p>·</p>
-          <p className="text-gray-500">{sellPrice}t</p>
         </div>
-      ) : type === "fish" ? (
+      ) : type === "fish" || "recipie" ? (
         <p className="font-semibold text-gray-800 flex items-center gap-1">
           <BadgeCent className="fill-yellow-100 text-yellow-500 w-5" />
           {sellPrice}t
