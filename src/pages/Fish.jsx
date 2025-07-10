@@ -22,6 +22,26 @@ const Fish = () => {
   const [filters, setFilters] = useState(null);
 
   useEffect(() => {
+    const season = searchParams.getAll("season");
+    const location = searchParams.getAll("location");
+
+    const filtersFromParams = {
+      season,
+      location,
+      donatable: searchParams.get("donatable") === "true",
+      favourites: searchParams.get("favourites") === "true",
+      type: searchParams.get("type") || "",
+      rarity: searchParams.get("rarity") || "",
+      weather: searchParams.get("weather") || "",
+      size: searchParams.get("size") || "",
+      sortBy: searchParams.get("sortBy") || "az",
+    };
+
+    setFilters(filtersFromParams);
+  }, []);
+  
+
+  useEffect(() => {
     if (!id && initialQuery) {
       setQuery("");
       setSearchParams({});
@@ -30,8 +50,72 @@ const Fish = () => {
 
   const handleFilterApply = (appliedFilters) => {
     setFilters(appliedFilters);
-  };
 
+    const params = new URLSearchParams(searchParams);
+
+    // Clear old multi-value keys
+    params.delete("season");
+    params.delete("location");
+
+    // Single/multi keys
+    if (appliedFilters.sortBy) {
+      params.set("sortBy", appliedFilters.sortBy);
+    } else {
+      params.delete("sortBy");
+    }
+
+    if (appliedFilters.donatable) {
+      params.set("donatable", "true");
+    } else {
+      params.delete("donatable");
+    }
+
+    if (appliedFilters.favourites) {
+      params.set("favourites", "true");
+    } else {
+      params.delete("favourites");
+    }
+
+    if (appliedFilters.type) {
+      params.set("type", appliedFilters.type);
+    } else {
+      params.delete("type");
+    }
+
+    if (appliedFilters.rarity) {
+      params.set("rarity", appliedFilters.rarity);
+    } else {
+      params.delete("rarity");
+    }
+
+    if (appliedFilters.weather) {
+      params.set("weather", appliedFilters.weather);
+    } else {
+      params.delete("weather");
+    }
+
+    if (appliedFilters.size) {
+      params.set("size", appliedFilters.size);
+    } else {
+      params.delete("size");
+    }
+
+    // Multi-select arrays
+    if (appliedFilters.season?.length) {
+      appliedFilters.season.forEach((s) => {
+        params.append("season", s);
+      });
+    }
+
+    if (appliedFilters.location?.length) {
+      appliedFilters.location.forEach((loc) => {
+        params.append("location", loc);
+      });
+    }
+
+    setSearchParams(params);
+  };
+  
   const filteredFish = fishes.filter((fish) =>
     fish.name.toLowerCase().startsWith(query.toLowerCase())
   );

@@ -35,7 +35,49 @@ export default function Crops() {
 
   const handleFilterApply = (appliedFilters) => {
     setFilters(appliedFilters);
+
+    const params = new URLSearchParams(searchParams);
+
+    // Clear old filter params
+    params.delete("season");
+    params.delete("location");
+
+    // Set updated ones
+    params.set("sortBy", appliedFilters.sortBy || "az");
+
+    if (appliedFilters.donatable) {
+      params.set("donatable", "true");
+    } else {
+      params.delete("donatable");
+    }
+
+    if (appliedFilters.favourites) {
+      params.set("favourites", "true");
+    } else {
+      params.delete("favourites");
+    }
+
+    if (appliedFilters.sourceType && appliedFilters.sourceType !== "all") {
+      params.set("sourceType", appliedFilters.sourceType);
+    } else {
+      params.delete("sourceType");
+    }
+
+    if (appliedFilters.season.length > 0) {
+      appliedFilters.season.forEach((s) => {
+        params.append("season", s);
+      });
+    }
+
+    if (appliedFilters.location.length > 0) {
+      appliedFilters.location.forEach((loc) => {
+        params.append("location", loc);
+      });
+    }
+
+    setSearchParams(params);
   };
+  
 
   const applyFilters = (data) => {
     if (!filters) return data;
@@ -126,11 +168,27 @@ export default function Crops() {
 
   useEffect(() => {
     if (location.state?.fromDetailPage) {
-      setFilters(null);
-      // clear temp state if needed
-      setSearchParams({});
     }
   }, [location.state]);
+
+  useEffect(() => {
+    const season = searchParams.getAll("season") || [];
+    const location = searchParams.getAll("location") || [];
+    const donatable = searchParams.get("donatable") === "true";
+    const favourites = searchParams.get("favourites") === "true";
+    const sortBy = searchParams.get("sortBy") || "az";
+    const sourceType = searchParams.get("sourceType") || "all";
+
+    setFilters({
+      season,
+      location,
+      donatable,
+      favourites,
+      sortBy,
+      sourceType,
+    });
+  }, []);
+  
 
   if (id) return <CropDetail />;
 
