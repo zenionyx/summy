@@ -10,6 +10,15 @@ const navItems = [
   { to: "/recipes", Icon: ChefHat, color: "bg-mm-pink" },
 ];
 
+// Maps nav routes to all their relevant matching paths
+const matchRoutes = {
+  "/": ["/"],
+  "/search": ["/search"],
+  "/crops": ["/crops", "/crop"],
+  "/fish": ["/fish", "/fish"],
+  "/recipes": ["/recipes", "/recipe"],
+};
+
 function NavDot({ to, Icon, color, isActive, screen }) {
   const isTablet = screen === "tablet";
   const sizeClass = isTablet ? "w-16 h-16" : "w-11 h-11";
@@ -24,7 +33,10 @@ function NavDot({ to, Icon, color, isActive, screen }) {
           isActive ? color : "bg-slate-100",
         ].join(" ")}
       >
-        <Icon className={isActive ? "text-white" : "text-gray-400"} size={iconSize} />
+        <Icon
+          className={isActive ? "text-white" : "text-gray-400"}
+          size={iconSize}
+        />
       </div>
     </Link>
   );
@@ -55,14 +67,18 @@ export default function Navbar() {
     <div
       className={`fixed bottom-0 w-full flex justify-around bg-slate-100 ${heightClass} items-center z-50`}
     >
-      {navItems.map((item) => (
-        <NavDot
-          key={item.to}
-          {...item}
-          isActive={pathname === item.to || pathname.startsWith(item.to + "/")}
-          screen={screen}
-        />
-      ))}
+      {navItems.map((item) => {
+        const routesToMatch = matchRoutes[item.to] || [];
+
+        const isActive =
+          item.to === "/"
+            ? pathname === "/" // Home is only active on exact root
+            : routesToMatch.some((route) => pathname.startsWith(route));
+
+        return (
+          <NavDot key={item.to} {...item} isActive={isActive} screen={screen} />
+        );
+      })}
     </div>
   );
 }
