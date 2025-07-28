@@ -137,7 +137,7 @@ const Fish = () => {
     }
     if (filters.location.length) {
       filtered = filtered.filter((fish) =>
-        fish.location?.includes(filters.location)
+        fish.location?.some((loc) => filters.location.includes(loc))
       );
     }
     if (filters.type) {
