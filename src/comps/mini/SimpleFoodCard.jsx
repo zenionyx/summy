@@ -98,7 +98,7 @@ export default function SimpleFoodCard({
             <p className="text-gray-500">{seedPrice}t</p>
           )}
         </div>
-      ) : type === "fish" || "recipie" ? (
+      ) : type === "fish" || type === "recipe" ? (
         <p className="font-semibold text-gray-800 flex items-center gap-1">
           <BadgeCent className="fill-yellow-100 text-yellow-500 w-5" />
           {sellPrice}t
